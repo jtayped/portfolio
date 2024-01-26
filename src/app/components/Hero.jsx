@@ -30,7 +30,7 @@ const Hero = () => {
           className="hidden sm:flex sm:w-[350px] lg:w-[450px] xl:w-[600px]"
         />
       </div>
-      <div className="absolute left-1/2 -translate-x-1/2 bottom-[100px] flex flex-col items-center text-center gap-0.5 text-yellow bg-black py-3 px-2 rounded-full">
+      <div className="absolute left-1/2 -translate-x-1/2 bottom-[100px] flex flex-col items-center text-center gap-0.5 py-3 px-2 rounded-full">
         <BsMouse size={25} />
         <BsChevronDown />
       </div>
