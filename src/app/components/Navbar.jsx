@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { pages } from "@/constants/pages";
 import { BsList } from "react-icons/bs";
@@ -12,7 +13,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 w-full flex items-center justify-between py-10 px-8 md:px-20 text-black z-10 bg-yellow/80 backdrop-blur-sm">
       <Link href="/">
-        <p className="text-2xl sm:text-4xl font-extrabold">LOGO</p>
+        <p className="text-2xl sm:text-4xl font-extrabold">TAYLOR</p>
       </Link>
       <nav className="hidden md:flex items-center gap-10 text-lg uppercase">
         {pages.map((page, i) => (

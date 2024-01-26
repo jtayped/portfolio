@@ -17,10 +17,10 @@ const Hero = () => {
           </p>
           <div className="flex gap-2 mt-4 text-sm md:text-md">
             <button className="bg-black border border-black text-yellow px-3 py-1 rounded-sm shadow-lg">
-              Buy Now!
+              Contact me!
             </button>
             <button className="border border-black px-3 py-1 rounded-sm shadow">
-              Something
+              View my work
             </button>
           </div>
         </div>
