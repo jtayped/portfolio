@@ -4,9 +4,12 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <Hero />
-      <About />
-      <Portfolio />
-      <Testimonials />
+      <div className="flex flex-col gap-[25px] sm:gap-[100px]">
+        <About />
+        <Portfolio />
+        <Testimonials />
+      </div>
+
       <div className="mt-[1000px]"></div>
     </main>
   );
