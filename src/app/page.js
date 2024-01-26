@@ -1,4 +1,4 @@
-import { About, Hero, Portfolio, Testimonials } from "./components";
+import { About, Hero, Portfolio, Testimonials, Contact } from "./components";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
         <About />
         <Portfolio />
         <Testimonials />
+        <Contact />
       </div>
 
       <div className="mt-[1000px]"></div>
