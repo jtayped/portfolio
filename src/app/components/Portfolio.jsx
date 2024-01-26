@@ -26,7 +26,7 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <div className="grid grid-rows-2 sm:grid-cols-2 gap-3">
+          <div className="grid grid-rows-2 sm:grid-cols-2 sm:grid-rows-1 gap-3">
             <div className="grid grid-cols-2 gap-3">
               <PortfolioPiece piece={work[2]} />
               <div className="grid grid-rows-2 gap-3">
