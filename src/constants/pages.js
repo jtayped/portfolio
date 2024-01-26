@@ -6,7 +6,7 @@ export const pages = [
   },
   {
     name: "Portfolio",
-    path: "/about",
+    path: "https://github.com/jtayped",
     accent: false,
   },
   {
