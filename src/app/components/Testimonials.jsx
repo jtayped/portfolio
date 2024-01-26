@@ -12,7 +12,7 @@ const Testimonials = () => {
           <ul className="flex flex-col md:grid md:grid-cols-3 md:items-center gap-4">
             {testimonials.map((testimonial, i) => (
               <li key={i}>
-                <div className="bg-white/80 text-black p-4 rounded-lg">
+                <div className="bg-white/80 text-black p-4 rounded-lg shadow">
                   <ul className="flex items-start gap-1">
                     {Array.from({ length: testimonial.stars }).map(
                       (_, index) => (
