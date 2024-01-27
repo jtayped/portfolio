@@ -21,9 +21,9 @@ const Menu = () => {
     return (
       <div className="fixed top-0 left-0 w-full h-screen bg-black flex items-center justify-center text-yellow">
         <div className="absolute top-0 left-0 w-full flex items-center justify-between py-8 px-8 z-10">
-          <button onClick={() => toggleSide()}>
+          <Link href="/" onClick={() => toggleSide()}>
             <p className="text-2xl sm:text-4xl font-extrabold">TAYLOR</p>
-          </button>
+          </Link>
           <button
             className="flex sm:hidden text-2xl"
             onClick={() => toggleSide()}
@@ -41,6 +41,7 @@ const Menu = () => {
             {pages.map((page, i) => (
               <Link
                 href={page.path}
+                onClick={() => toggleSide()}
                 key={i}
                 className={`${
                   page.accent
