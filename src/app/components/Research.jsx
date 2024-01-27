@@ -8,7 +8,7 @@ const Research = () => {
   return (
     <div className="text-black px-8 py-10 flex items-center justify-center">
       <div className="w-[900px]">
-        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2">
           <div>
             <Image
               src={SEOImage}
@@ -18,15 +18,17 @@ const Research = () => {
             ></Image>
           </div>
           <div>
+            <p className="bg-black text-xs text-white w-fit px-1 py-0.5 rounded">
+              NEW PROJECT
+            </p>
             <h2 className="text-3xl font-bold">
               Check out my Research Project!
             </h2>
             <p>
-              Explore my research project, 'SEO Practices to Improve Rankings in
-              SERPs', delving into advanced SEO strategies using React JS and
-              Tailwind CSS. From overcoming obstacles to transformative
-              results—experience a threefold increase in Total Clicks, a surge
-              in CTR, and enhanced web development proficiency.
+              Have a look at my research project, 'SEO Practices to Improve
+              Rankings in SERPs', delving into advanced SEO strategies using
+              React JS and Tailwind CSS. From overcoming obstacles to
+              transformative results.
             </p>
             <Link
               href="/research"
