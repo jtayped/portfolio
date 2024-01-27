@@ -22,10 +22,11 @@ const Research = () => {
               Check out my Research Project!
             </h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Accusamus mollitia facilis assumenda earum voluptatibus porro ad
-              repellendus illo voluptates aspernatur. Sed eveniet perferendis
-              excepturi quae quidem. Fuga earum iusto minima.
+              Explore my research project, 'SEO Practices to Improve Rankings in
+              SERPs', delving into advanced SEO strategies using React JS and
+              Tailwind CSS. From overcoming obstacles to transformative
+              results—experience a threefold increase in Total Clicks, a surge
+              in CTR, and enhanced web development proficiency.
             </p>
             <Link
               href="/research"
