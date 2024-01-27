@@ -11,7 +11,7 @@ export const pages = [
   },
   {
     name: "Contact",
-    path: "/contact",
+    path: "/#contact",
     accent: true,
   },
 ];
