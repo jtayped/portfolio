@@ -1,4 +1,11 @@
-import { About, Hero, Portfolio, Testimonials, Contact } from "./components";
+import {
+  About,
+  Hero,
+  Portfolio,
+  Testimonials,
+  Contact,
+  Research,
+} from "./components";
 
 export default function Home() {
   return (
@@ -7,6 +14,7 @@ export default function Home() {
       <div className="flex flex-col gap-[25px] sm:gap-[100px] sm:mb-14">
         <About />
         <Portfolio />
+        <Research />
         <Testimonials />
         <Contact />
       </div>

@@ -5,3 +5,4 @@ export { default as Portfolio } from "./Portfolio";
 export { default as Testimonials } from "./Testimonials";
 export { default as Contact } from "./Contact";
 export { default as Menu } from "./Menu";
+export { default as Research } from "./Research";
