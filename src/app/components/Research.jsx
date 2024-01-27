@@ -8,7 +8,7 @@ const Research = () => {
   return (
     <div className="text-black px-8 py-10 flex items-center justify-center">
       <div className="w-[900px]">
-        <div className="flex flex-col md:grid md:grid-cols-2 items-center gap-8">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8">
           <div>
             <Image
               src={SEOImage}
@@ -29,7 +29,7 @@ const Research = () => {
             </p>
             <Link
               href="/research"
-              className="flex items-center gap-2 bg-black text-white w-fit px-2 py-1 rounded mt-2 text-sm"
+              className="flex items-center gap-2 border border-black text-black w-fit px-2 py-1 rounded mt-2 text-sm hover:bg-black hover:text-white transition-colors duration-[25ms]"
             >
               <BsFillFileTextFill />
               Learn more
