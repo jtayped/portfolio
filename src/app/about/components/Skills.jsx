@@ -10,9 +10,10 @@ const Skills = () => {
         <div className="max-w-[340px]">
           <h2 className="text-3xl font-bold">My Skills</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
-            facere nulla voluptate rem quisquam velit necessitatibus aliquam,
-            asperiores officia cumque.
+            Proficient in HTML/CSS, Python, SEO, and skilled with Tailwind CSS,
+            React JS, JavaScript, and Java. My journey, from building my first
+            computer to mastering diverse languages, reflects a commitment to
+            continuous learning and adaptability.
           </p>
           <Link
             href="https://github.com/jtayped"
