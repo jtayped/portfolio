@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Cube from "@/../public/cube.svg";
 import { BsMouse, BsChevronDown } from "react-icons/bs";
 
@@ -17,12 +18,18 @@ const Hero = () => {
             and let's create something extraordinary together.
           </p>
           <div className="flex gap-2 mt-4 text-sm md:text-md">
-            <button className="bg-black border border-black text-yellow px-3 py-1 rounded-sm shadow-lg">
+            <Link
+              href="/#contact"
+              className="bg-black border border-black text-yellow px-3 py-1 rounded-sm shadow-lg"
+            >
               Contact me!
-            </button>
-            <button className="border border-black px-3 py-1 rounded-sm shadow">
+            </Link>
+            <Link
+              href="/#portfolio"
+              className="border border-black px-3 py-1 rounded-sm shadow"
+            >
               View my work
-            </button>
+            </Link>
           </div>
         </div>
         <Image
