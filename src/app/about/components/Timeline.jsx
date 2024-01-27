@@ -1,6 +1,41 @@
 import React from "react";
 import { events } from "@/constants/timeline";
 import Image from "next/image";
+import Link from "next/link";
+
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+const birthYear = 2006;
+const birthMonth = 8;
+const birthDay = 3;
+
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+const currentMonth = currentDate.getMonth() + 1; // Months are zero-based, so we add 1
+
+// Calculate age considering birth month and day
+const age =
+  currentMonth > birthMonth ||
+  (currentMonth === birthMonth && currentDate.getDate() >= birthDay)
+    ? currentYear - birthYear
+    : currentYear - birthYear - 1;
+
+const currentMonthYear = `${
+  months[new Date().getMonth()]
+} ${new Date().getFullYear()}`;
 
 const Timeline = () => {
   return (
@@ -36,6 +71,31 @@ const Timeline = () => {
               </div>
             </li>
           ))}
+          <li class="mb-4 ms-4">
+            <div class="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5"></div>
+            <div className="grid grid-cols-2 gap-10">
+              <div>
+                <div className="flex items-center mb-1 text-sm leading-none text-black/80 gap-2">
+                  <time>{currentMonthYear}</time>
+                  <p className="font-bold">({age} y.o.)</p>
+                </div>
+
+                <h3 class="text-lg font-semibold">Today</h3>
+                <p class="text-base mb-2">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Earum dolor quasi velit perspiciatis debitis asperiores rem
+                  modi dolore quibusdam commodi. Similique dolore vel hic
+                  tempora voluptatum nostrum, accusamus culpa optio.
+                </p>
+                <Link
+                  href="/#contact"
+                  className="px-2 py-1 bg-black text-yellow rounded"
+                >
+                  Take action!
+                </Link>
+              </div>
+            </div>
+          </li>
         </ol>
       </div>
     </div>
