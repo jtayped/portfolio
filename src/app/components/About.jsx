@@ -20,7 +20,7 @@ const About = () => {
             </p>
             <Link
               href="/about"
-              className="flex gap-3 items-center px-2 py-1.5 mt-3 w-fit rounded border border-black text-black hover:bg-black hover:text-white transition-colors duration-[25ms]"
+              className="flex gap-3 items-center px-2 py-1.5 mt-3 w-fit rounded bg-black text-white"
             >
               <BsFillPersonFill size={18} />
               <p className="text-sm">Read more</p>
