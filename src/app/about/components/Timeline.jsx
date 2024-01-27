@@ -94,9 +94,9 @@ const Timeline = () => {
                 </p>
                 <Link
                   href="/#contact"
-                  className="px-2 py-1 bg-black text-yellow rounded"
+                  className="p-2 px-4 rounded bg-black text-yellow"
                 >
-                  Take action!
+                  TAKE ACTION!
                 </Link>
               </div>
             </div>
