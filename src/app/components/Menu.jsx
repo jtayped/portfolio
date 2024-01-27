@@ -7,7 +7,7 @@ import Image from "next/image";
 import Cube from "@/../public/cube.svg";
 
 const Menu = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   function toggleSide() {
     setOpen(!open);
   }
