@@ -17,11 +17,12 @@ const FLL = () => {
         <div>
           <h2 className="text-3xl font-bold">First Lego League</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odio
-            sint quidem exercitationem? Explicabo voluptate nesciunt quas
-            voluptatibus soluta molestias voluptatum suscipit! Possimus culpa,
-            consequuntur consequatur cumque quas officiis molestiae voluptatibus
-            incidunt expedita at veritatis excepturi non modi iusto sapiente!
+            The First Lego League has been a rewarding journey, fostering STEM
+            learning and teamwork. As a three-time finalist in the top 50 teams
+            in Spain, the experience goes beyond competition—it's about hands-on
+            exploration and personal growth. Joining this community has been a
+            valuable part of my journey, and I invite others to explore its
+            possibilities.
           </p>
           <Link
             href="https://www.firstlegoleague.org/"
