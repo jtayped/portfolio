@@ -17,9 +17,11 @@ const Timeline = () => {
                 className={`${event.image ? "grid grid-cols-2 gap-10" : null}`}
               >
                 <div>
-                  <time class="mb-1 text-sm leading-none text-black/80">
-                    {event.year}
-                  </time>
+                  <div className="flex items-center mb-1 text-sm leading-none text-black/80 gap-2">
+                    <time>{event.year}</time>
+                    <p className="font-bold">({event.age} y.o.)</p>
+                  </div>
+
                   <h3 class="text-lg font-semibold">{event.name}</h3>
                   <p class="mb-4 text-base">{event.description}</p>
                 </div>
