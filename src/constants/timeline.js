@@ -1,6 +1,6 @@
 export const events = [
   {
-    name: "First Computer Built",
+    name: "First Computer Build",
     year: "December 2019",
     age: 13,
     image: "/timeline/first-computer.jpg",
@@ -23,7 +23,7 @@ export const events = [
       "As the COVID-19 pandemic ushered in online classes and confinement, I found a silver lining in more time on computers. This period became crucial for my development as a programmer, offering an opportunity to delve deeper into learning and explore new skills.",
   },
   {
-    name: "Start of programming journey (Python)",
+    name: "Start of Programming Journey (Python)",
     year: "June 2020",
     age: 14,
     description:
@@ -53,7 +53,7 @@ export const events = [
       "To expand my programming repertoire beyond Python, I ventured into web development. Starting with HTML and CSS, I quickly progressed to React JS and later added Tailwind CSS to my toolkit. This strategic approach, reminiscent of my Python learning journey, marked the beginning of my foray into the dynamic world of web development.",
   },
   {
-    name: "Initiation in Fiverr",
+    name: "Initiation Into Fiverr",
     year: "February 2023",
     age: 17,
     description:
