@@ -42,7 +42,7 @@ const Timeline = () => {
     <div className="text-black px-8 py-10 flex items-center justify-center">
       <div className="w-[900px] flex flex-col items-center gap-10">
         <div className="text-center">
-          <h2 className="text-3xl font-bold">Timeline</h2>
+          <h2 className="text-3xl font-bold">My Story</h2>
         </div>
         <ol class="relative border-s border-black max-w-[600px]">
           {events.map((event, i) => (
