@@ -1,17 +1,10 @@
-"use client";
-import React, { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { pages } from "@/constants/pages";
-import { BsList } from "react-icons/bs";
+import { Menu } from ".";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  function toggleSide() {
-    setOpen(!open);
-  }
   return (
-    <header className="fixed top-0 left-0 w-full flex items-center justify-between py-10 px-8 md:px-20 text-black z-10 bg-yellow/80 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 w-full flex items-center justify-between py-8 sm:py-10 px-8 md:px-20 text-black z-10 bg-yellow/80 backdrop-blur-sm">
       <Link href="/">
         <p className="text-2xl sm:text-4xl font-extrabold">TAYLOR</p>
       </Link>
@@ -30,9 +23,7 @@ const Navbar = () => {
           </Link>
         ))}
       </nav>
-      <button className="flex sm:hidden text-2xl" onClick={() => toggleSide}>
-        <BsList />
-      </button>
+      <Menu />
     </header>
   );
 };
