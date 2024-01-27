@@ -1,45 +1,26 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Me from "@/@/../../public/about/me.png";
-import { BsMouse, BsChevronDown } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen flex justify-start sm:justify-center items-center text-black">
-      <div className="max-w-[1500px] flex items-center sm:items-center px-8">
-        <div className="max-w-[300px] sm:max-w-[600px]">
-          <h1 className="text-4xl md:text-6xl font-bold">
-            Lorem ipsum dolor sit amet.
-          </h1>
-          <p className="text-sm md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            ipsam atque veniam officia sint porro quaerat fuga et quam fugit!
-          </p>
-          <div className="flex gap-2 mt-4 text-sm md:text-md">
-            <Link
-              href="/#contact"
-              className="bg-black border border-black text-yellow px-3 py-1 rounded-sm shadow-lg"
-            >
-              Contact me!
-            </Link>
-            <Link
-              href="/#portfolio"
-              className="border border-black px-3 py-1 rounded-sm shadow"
-            >
-              View my work
-            </Link>
+    <div className="relative text-black px-8 py-10 flex items-center justify-center mt-[100px] sm:mt-[200px]">
+      <div className="w-[900px] flex items-center justify-center">
+        <div className="flex flex-col-reverse gap-10 sm:gap-0 sm:grid sm:grid-cols-2 items-center">
+          <div className="w-full h-full flex items-center justify-center">
+            <Image src={Me} width={200} height={400}></Image>
+          </div>
+
+          <div className="max-w-[400px] text-center sm:text-left">
+            <h1 className="text-6xl font-bold">About Me</h1>
+            <p>
+              From building my first computer at 13 to excelling in web
+              development, my journey reflects adaptability and continuous
+              learning. As a passionate web developer, let's collaborate to turn
+              your digital dreams into reality.
+            </p>
           </div>
         </div>
-        <Image
-          src={Me}
-          width={350}
-          className="hidden sm:flex sm:w-[100px] lg:w-[250px] xl:w-[350px]"
-        />
-      </div>
-      <div className="absolute left-1/2 -translate-x-1/2 bottom-[100px] flex flex-col items-center text-center gap-0.5 py-3 px-2 rounded-full">
-        <BsMouse size={25} />
-        <BsChevronDown />
       </div>
     </div>
   );
