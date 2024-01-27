@@ -9,11 +9,12 @@ const Hero = () => {
       <div className="max-w-[1500px] flex items-center sm:items-center px-8">
         <div className="max-w-[300px] sm:max-w-[600px]">
           <h1 className="text-4xl md:text-6xl font-bold">
-            Lorem ipsum dolor sit amet.
+            Hi! I am Joel Taylor
           </h1>
           <p className="text-sm md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            ipsam atque veniam officia sint porro quaerat fuga et quam fugit!
+            a young and passionate front-end developer crafting innovative and
+            precise web solutions. Join me on a journey of continuous learning,
+            and let's create something extraordinary together.
           </p>
           <div className="flex gap-2 mt-4 text-sm md:text-md">
             <button className="bg-black border border-black text-yellow px-3 py-1 rounded-sm shadow-lg">
