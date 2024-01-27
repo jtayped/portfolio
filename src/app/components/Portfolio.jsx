@@ -6,10 +6,8 @@ import { BsGithub } from "react-icons/bs";
 
 const Portfolio = () => {
   return (
-    <div
-      className="text-black px-8 py-10 flex items-center justify-center"
-      id="portfolio"
-    >
+    <div className="relative text-black px-8 py-10 flex items-center justify-center">
+      <a className="absolute -top-[100px] sm:-top-[250px]" id="portfolio"></a>
       <div className="w-[900px]">
         <div className="flex flex-col gap-10">
           <div className="flex justify-center">
