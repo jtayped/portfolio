@@ -17,6 +17,6 @@ export const work = [
   {
     name: "Bitcoin",
     image: "/portfolio/Bitcoin.webp",
-    href: "/gpt-articles",
+    href: "/bitcoin",
   },
 ];
