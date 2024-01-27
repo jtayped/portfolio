@@ -14,7 +14,7 @@ const PortfolioPiece = ({ piece }) => {
         height={500}
         width={500}
       />
-      <div className="absolute bottom-0 right-0 bg-white px-2 py-0.5 rounded-tl-sm rounded-br-sm shadow">
+      <div className="hidden absolute bottom-0 right-0 bg-white px-2 py-0.5 rounded-tl-sm rounded-br-sm shadow">
         <p className="text-black text-[10px] sm:text-sm">{piece.name}</p>
       </div>
     </Link>
