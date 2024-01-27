@@ -40,17 +40,15 @@ const currentMonthYear = `${
 const Timeline = () => {
   return (
     <div className="text-black px-8 py-10 flex items-center justify-center">
-      <div className="w-[900px] flex flex-col gap-10">
+      <div className="w-[900px] flex flex-col items-center gap-10">
         <div className="text-center">
           <h2 className="text-3xl font-bold">Timeline</h2>
         </div>
-        <ol class="relative border-s border-black">
+        <ol class="relative border-s border-black max-w-[600px]">
           {events.map((event, i) => (
             <li key={i} class="mb-10 ms-4">
               <div class="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5"></div>
-              <div
-                className={`${event.image ? "grid grid-cols-2 gap-10" : null}`}
-              >
+              <div>
                 <div>
                   <div className="flex items-center mb-1 text-sm leading-none text-black/80 gap-2">
                     <time>{event.year}</time>
@@ -65,7 +63,7 @@ const Timeline = () => {
                     src={event.image}
                     height={200}
                     width={400}
-                    className="h-[200px] w-full object-cover rounded"
+                    className="h-[160px] max-w-[350px] object-cover rounded"
                   ></Image>
                 ) : null}
               </div>
@@ -73,7 +71,7 @@ const Timeline = () => {
           ))}
           <li class="mb-4 ms-4">
             <div class="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5"></div>
-            <div className="grid grid-cols-2 gap-10">
+            <div>
               <div>
                 <div className="flex items-center mb-1 text-sm leading-none text-black/80 gap-2">
                   <time>{currentMonthYear}</time>
@@ -81,11 +79,18 @@ const Timeline = () => {
                 </div>
 
                 <h3 class="text-lg font-semibold">Today</h3>
-                <p class="text-base mb-2">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Earum dolor quasi velit perspiciatis debitis asperiores rem
-                  modi dolore quibusdam commodi. Similique dolore vel hic
-                  tempora voluptatum nostrum, accusamus culpa optio.
+                <p class="text-base mb-1">
+                  Today, I stand as a passionate web developer, ready to turn
+                  your digital dreams into reality. From building my first
+                  computer at 13 to thriving as a freelancer on Fiverr, my
+                  journey embodies a commitment to innovation and continuous
+                  learning.
+                </p>
+                <p className="text-base mb-3">
+                  Let's collaborate, innovate, and bring your digital
+                  aspirations to life. Today is not just another day; it's an
+                  opportunity to create something extraordinary. Let's make it
+                  happen together.
                 </p>
                 <Link
                   href="/#contact"
