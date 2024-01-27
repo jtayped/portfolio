@@ -12,7 +12,7 @@ const FLL = () => {
           src={Team}
           width={700}
           height={700}
-          className="object-cover max-w-[400px] aspect-square rounded"
+          className="object-cover sm:max-w-[400px] aspect-square rounded"
         ></Image>
         <div>
           <h2 className="text-3xl font-bold">First Lego League</h2>
