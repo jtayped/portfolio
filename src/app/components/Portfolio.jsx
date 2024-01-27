@@ -18,10 +18,13 @@ const Portfolio = () => {
                 </Link>
               </div>
               <p className="mt-2">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Delectus iste incidunt nulla accusamus omnis voluptates ad
-                officia fuga nobis id, modi excepturi. Inventore accusantium
-                voluptatem commodi illum laudantium odio ducimus?
+                Dive into my portfolio showcasing a spectrum of impactful
+                projects, demonstrating expertise in web development and beyond.
+                For an in-depth look at the code, visit{" "}
+                <Link href="https://github.com/jtayped" className="underline">
+                  my GitHub
+                </Link>
+                .
               </p>
             </div>
           </div>

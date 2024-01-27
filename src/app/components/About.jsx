@@ -9,13 +9,14 @@ const About = () => {
     <div className="text-black px-8 py-10 flex items-center justify-center">
       <div className="w-[900px]">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
-          <div className="max-w-[400px]">
+          <div className="max-w-[450px]">
             <h2 className="text-3xl font-bold">About Me</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate, illum! Assumenda temporibus labore alias optio quod
-              quis deserunt expedita quos quo tenetur, facere quasi similique
-              harum aspernatur beatae sit et?
+              From building my first computer at 13 to thriving in the First
+              Lego League and venturing into web development, my journey is a
+              testament to adaptability and continuous learning. Today, as a
+              passionate web developer, I invite you to collaborate and turn
+              your digital dreams into reality. Let's make it happen together!
             </p>
             <Link
               href="/about"
