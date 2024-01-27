@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
   }
   return (
-    <div className="text-black px-8 py-10 flex items-center justify-center">
+    <div className="text-black px-8 py-10 flex items-center justify-center" id="contact">
       <div className="w-[900px] flex flex-col sm:grid sm:grid-cols-2">
         <div className="flex flex-col sm:max-w-[400px] sm:pr-5">
           <h2 className="text-3xl font-bold">Contact</h2>
