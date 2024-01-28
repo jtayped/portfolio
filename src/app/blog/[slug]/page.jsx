@@ -80,7 +80,7 @@ const Page = ({ params }) => {
                 <time>{post.date}</time>
               </div>
             </div>
-            <article className="prose prose-red max-w-prose mx-auto prose-pre:bg-slate-300 prose-code:text-black prose-pre:border prose-pre:shadow">
+            <article className="prose prose-zinc max-w-prose mx-auto prose-pre:bg-slate-300 prose-code:text-black prose-pre:border prose-pre:shadow">
               <h1 className="text-5xl font-bold">{post.title}</h1>
               <div dangerouslySetInnerHTML={{ __html: post.htmlContent }} />
             </article>
