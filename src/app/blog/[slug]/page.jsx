@@ -60,6 +60,7 @@ const Page = ({ params }) => {
               src={post.cover}
               width={900}
               height={350}
+              alt="Post cover"
               className="w-full h-[350px]"
             ></Image>
             <div className="flex items-center gap-3 mt-2">
@@ -68,6 +69,7 @@ const Page = ({ params }) => {
                   src={Me}
                   width={35}
                   height={35}
+                  alt="Joel Taylor"
                   className="rounded-full"
                 ></Image>
               </Link>
