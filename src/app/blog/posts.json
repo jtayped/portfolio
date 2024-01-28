@@ -1,0 +1,195 @@
+{
+  "posts": [
+    {
+      "title": "Introduction to SEO",
+      "description": "Explore the fundamentals of Search Engine Optimization (SEO) and its impact on website visibility, traffic, and conversions. Learn how SEO practices contribute to increased revenue, low-cost conversions, and improved credibility.",
+      "date": "13 January 2023",
+      "author": "Joel Taylor",
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Search_Engine_Results_Page_%28SERP%29_Graphic_Illustration.png",
+      "path": "/TDR/1_Introduction_To_SEO",
+      "keywords": ["SEO", "Digital Marketing", "Website Optimization"]
+    },
+    {
+      "title": "Historical Evolution of SEO",
+      "description": "Explore the early days of SEO in the 1990s, the transition to Google dominance in the early 2000s, and the modern era of SEO in the 2020s. Learn about the evolution of search engines, the role of web crawlers, and the impact of major algorithm updates, including the significance of mobile-friendly websites.",
+      "date": "13 January 2023",
+      "author": "Joel Taylor",
+      "cover": "https://www.abondance.com/Bin/yahoo-directory-us.jpg",
+      "path": "/TDR/2_History_Of_SEO",
+      "keywords": [
+        "SEO",
+        "Search Engine Optimization",
+        "Google",
+        "Website Development",
+        "Algorithm Updates"
+      ]
+    },
+    {
+      "title": "SEO Fundamentals",
+      "description": "Explore the core principles of Search Engine Optimization (SEO) and its impact on website performance. Dive into on-page SEO optimization, focusing on search intent, keywords, title tags, and URLs.",
+      "date": "13 January 2023",
+      "author": "Joel Taylor",
+      "cover": "https://a2j7w7i7.rocketcdn.me/wp-content/uploads/2020/07/que-es-el-seo.jpg",
+      "path": "/TDR/3_SEO_Fundamentals",
+      "keywords": [
+        "SEO",
+        "Search Engine Optimization",
+        "On-Page SEO",
+        "Off-Page SEO",
+        "Keywords",
+        "Backlinks"
+      ]
+    },
+    {
+      "title": "Technical SEO",
+      "description": "Explore the essential aspects of Technical SEO, including website architecture, site structure, mobile optimization, page speed optimization, schema markup, and security practices. Understand the importance of search engine accessibility, URL structure, mobile-friendly design, page speed metrics, structured data, and SSL encryption for effective Technical SEO.",
+      "date": "13 January 2023",
+      "author": "Joel Taylor",
+      "cover": "https://www.searchenginejournal.com/wp-content/uploads/2018/08/sitemap-crawl.png",
+      "path": "/TDR/4_Technical_SEO",
+      "keywords": [
+        "SEO",
+        "Technical SEO",
+        "Website Architecture",
+        "Mobile Optimization",
+        "Page Speed",
+        "Schema Markup",
+        "Security"
+      ]
+    },
+    {
+      "title": "Content Optimization for SEO",
+      "description": "Explore the strategies for effective content optimization in SEO, covering topics such as content formatting, multimedia usage, user intent, and user experience (UX) for enhanced visibility and user engagement. Learn how to format content for reduced bounce rates, optimize multimedia elements with descriptive filenames and alt text, and more.",
+      "date": "13 January 2023",
+      "author": "Joel Taylor",
+      "cover": "https://api.backlinko.com/app/uploads/2020/05/seo-content.webp",
+      "path": "/TDR/5_Content_Optimisation",
+      "keywords": [
+        "SEO",
+        "Content Optimization",
+        "User Intent",
+        "User Experience (UX)",
+        "Multimedia Usage",
+        "Accessibility"
+      ]
+    },
+    {
+      "title": "Local SEO",
+      "description": "Explore the essential techniques of local SEO to enhance a company's visibility in local search results. Learn about choosing relevant local keywords, optimizing Google Business Profile, and generating reliable NAP citations. Discover the importance of maintaining accurate business information and leveraging customer reviews. Elevate your local SEO strategies for increased local traffic, leads, and brand recognition.",
+      "date": "13 January 2023",
+      "author": "Joel Taylor",
+      "cover": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/341666329/original/fcdc6c898f58de07978ae05cc6ffc9ab48d296c9/optimize-your-google-my-business-gmb-listing.png",
+      "path": "/TDR/6_Local_SEO",
+      "keywords": [
+        "Local SEO",
+        "Google My Business",
+        "NAP Citations",
+        "Local Search Results",
+        "Business Profile Optimization"
+      ]
+    },
+    {
+      "title": "SEO Analytics and Metrics",
+      "description": "Explore the key SEO performance indicators (KPIs) and tools for effective analytics. Learn about organic traffic, referral traffic, direct traffic, and social traffic. Dive into essential KPIs like keyword rankings, clickthrough rate (CTR), conversions, bounce rate, and crawl problems. Discover the tools and platforms for SEO analytics, including Google Analytics and Google Search Console.",
+      "date": "13 January 2023",
+      "author": "Joel Taylor",
+      "cover": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/341666329/original/fcdc6c898f58de07978ae05cc6ffc9ab48d296c9/optimize-your-google-my-business-gmb-listing.png",
+      "path": "/TDR/7_SEO_Analytics_And_Metrics",
+      "keywords": [
+        "SEO Analytics",
+        "KPIs",
+        "Organic Traffic",
+        "Keyword Rankings",
+        "CTR",
+        "Conversions",
+        "Bounce Rate"
+      ]
+    },
+    {
+      "title": "Emerging Trends in SEO",
+      "description": "Explore the latest trends shaping the future of SEO. Learn about Voice Search Optimization and its impact on search engine results. Understand how AI and Machine Learning are revolutionizing search engine rankings and content personalization. Dive into Visual and Video Search, including Google Lens and Pinterest Lens, and discover the importance of image SEO.",
+      "date": "13 January 2023",
+      "author": "Joel Taylor",
+      "cover": "https://cdn.gulosolutions.com/wp-content/uploads/2019/08/13225744/voice-search-seo-social.png",
+      "path": "/TDR/7_SEO_Analytics_And_Metrics",
+      "keywords": [
+        "SEO Trends",
+        "Voice Search Optimization",
+        "AI in SEO",
+        "Machine Learning",
+        "Visual Search",
+        "Video Search"
+      ]
+    },
+    {
+      "title": "Ethical and Legal Considerations in SEO",
+      "description": "Understand the ethical practices in SEO, known as White Hat SEO, and the importance of providing value to users while adhering to search engine guidelines. Explore the risks associated with unethical practices, such as Black Hat SEO, which manipulates search engine rules for quick results.",
+      "date": "13 January 2023",
+      "author": "Joel Taylor",
+      "cover": "https://www.csoonline.com/wp-content/uploads/2023/09/shutterstock_769796665-1.jpg?quality=50&strip=all",
+      "path": "/TDR/9_Ethical_And_Legal_Considerations",
+      "keywords": [
+        "Ethical SEO",
+        "White Hat SEO",
+        "Black Hat SEO",
+        "Content Quality",
+        "Link Farms",
+        "SEO Guidelines"
+      ]
+    },
+    {
+      "title": "Mastering Texture Mapping with python: A Comprehensive Guide",
+      "description": "Discover how BTCPay Server's integration with React applications is transforming the world of cryptocurrency payments. Learn about its evolution, challenges, and the innovative React BTCPay Pay Button.",
+      "date": "1 October 2023",
+      "author": "Joel Taylor",
+      "cover": "/blog/Mastering Texture Mapping with Pygame A Comprehensive Guide/cover.jpg",
+      "path": "/blog/Mastering Texture Mapping with Pygame A Comprehensive Guide",
+      "keywords": ["Cryptocurrency"]
+    },
+    {
+      "title": "Top Games for Oculus Quest 3: Must-Play Titles",
+      "description": "Find the best games that are compatible with Oculus Quest 3. Dive into a world of gaming excellence.",
+      "date": "30 September 2023",
+      "author": "Joel Taylor",
+      "cover": "/blog/Top Games for Oculus Quest 3/cover.webp",
+      "path": "/blog/Top Games for Oculus Quest 3 Must Play Titles",
+      "keywords": ["Virtual Reality"]
+    },
+    {
+      "title": "The Ultimate Guide to Upgrading Your Steam Deck: Hardware and Software Mods",
+      "description": "Discover how to enhance your Steam Deck gaming experience through hardware and software modifications. Explore SSD upgrades, joystick enhancements, and software customization.",
+      "date": "1 October 2023",
+      "author": "Joel Taylor",
+      "cover": "/blog/The Ultimate Guide to Upgrading Your Steam Deck/cover.jpg",
+      "path": "/blog/The Ultimate Guide to Upgrading Your Steam Deck",
+      "keywords": ["Hardware Mods"]
+    },
+    {
+      "title": "BTCPay Server's Seamless Integration with React Apps",
+      "description": "Discover how BTCPay Server's integration with React applications is transforming the world of cryptocurrency payments. Learn about its evolution, challenges, and the innovative React BTCPay Pay Button.",
+      "date": "1 October 2023",
+      "author": "Joel Taylor",
+      "cover": "/blog/BTCPay Server's Seamless Integration with React Apps/cover.jpg",
+      "path": "/blog/BTCPay Server's Seamless Integration with React Apps",
+      "keywords": ["Cryptocurrency"]
+    },
+    {
+      "title": "Understanding and Resolving iPhone 15 Overheating Issues",
+      "description": "Explore the reasons behind iPhone 15 overheating and learn about the swift solutions offered by Apple. Get insights into temporary fixes and the impact on sales.",
+      "date": "1 October 2023",
+      "author": "Joel Taylor",
+      "cover": "/blog/Understanding and Resolving iPhone 15 Overheating Issues/cover.webp",
+      "path": "/blog/Understanding and Resolving iPhone 15 Overheating Issues",
+      "keywords": ["Apple"]
+    },
+    {
+      "title": "Transforming Patient Care With AI-Powered Monitoring",
+      "description": "Explore AI's role in patient care monitoring. Click to learn more.",
+      "date": "30 September 2023",
+      "author": "Joel Taylor",
+      "cover": "/blog/Transforming Patient Care With AI-Powered Monitoring/cover.jpg",
+      "path": "/blog/Transforming Patient Care With AI-Powered Monitoring",
+      "keywords": ["Artificial Intelligence"]
+    }
+  ]
+}
