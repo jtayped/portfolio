@@ -6,7 +6,7 @@
       "date": "13 January 2023",
       "author": "Joel Taylor",
       "cover": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Search_Engine_Results_Page_%28SERP%29_Graphic_Illustration.png",
-      "path": "/TDR/1_Introduction_To_SEO",
+      "path": "/blog-posts/1_Introduction_To_SEO.mdx",
       "keywords": ["SEO", "Digital Marketing", "Website Optimization"]
     },
     {
@@ -15,7 +15,7 @@
       "date": "13 January 2023",
       "author": "Joel Taylor",
       "cover": "https://www.abondance.com/Bin/yahoo-directory-us.jpg",
-      "path": "/TDR/2_History_Of_SEO",
+      "path": "/blog-posts/2_History_Of_SEO.mdx",
       "keywords": [
         "SEO",
         "Search Engine Optimization",
@@ -30,7 +30,7 @@
       "date": "13 January 2023",
       "author": "Joel Taylor",
       "cover": "https://a2j7w7i7.rocketcdn.me/wp-content/uploads/2020/07/que-es-el-seo.jpg",
-      "path": "/TDR/3_SEO_Fundamentals",
+      "path": "/blog-posts/3_SEO_Fundamentals.mdx",
       "keywords": [
         "SEO",
         "Search Engine Optimization",
@@ -46,7 +46,7 @@
       "date": "13 January 2023",
       "author": "Joel Taylor",
       "cover": "https://www.searchenginejournal.com/wp-content/uploads/2018/08/sitemap-crawl.png",
-      "path": "/TDR/4_Technical_SEO",
+      "path": "/blog-posts/4_Technical_SEO.mdx",
       "keywords": [
         "SEO",
         "Technical SEO",
@@ -63,7 +63,7 @@
       "date": "13 January 2023",
       "author": "Joel Taylor",
       "cover": "https://api.backlinko.com/app/uploads/2020/05/seo-content.webp",
-      "path": "/TDR/5_Content_Optimisation",
+      "path": "/blog-posts/5_Content_Optimisation.mdx",
       "keywords": [
         "SEO",
         "Content Optimization",
@@ -79,7 +79,7 @@
       "date": "13 January 2023",
       "author": "Joel Taylor",
       "cover": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/341666329/original/fcdc6c898f58de07978ae05cc6ffc9ab48d296c9/optimize-your-google-my-business-gmb-listing.png",
-      "path": "/TDR/6_Local_SEO",
+      "path": "/blog-posts/6_Local_SEO.mdx",
       "keywords": [
         "Local SEO",
         "Google My Business",
@@ -94,7 +94,7 @@
       "date": "13 January 2023",
       "author": "Joel Taylor",
       "cover": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/341666329/original/fcdc6c898f58de07978ae05cc6ffc9ab48d296c9/optimize-your-google-my-business-gmb-listing.png",
-      "path": "/TDR/7_SEO_Analytics_And_Metrics",
+      "path": "/blog-posts/7_SEO_Analytics_And_Metrics.mdx",
       "keywords": [
         "SEO Analytics",
         "KPIs",
@@ -111,7 +111,7 @@
       "date": "13 January 2023",
       "author": "Joel Taylor",
       "cover": "https://cdn.gulosolutions.com/wp-content/uploads/2019/08/13225744/voice-search-seo-social.png",
-      "path": "/TDR/7_SEO_Analytics_And_Metrics",
+      "path": "/blog-posts/7_SEO_Analytics_And_Metrics.mdx",
       "keywords": [
         "SEO Trends",
         "Voice Search Optimization",
@@ -127,7 +127,7 @@
       "date": "13 January 2023",
       "author": "Joel Taylor",
       "cover": "https://www.csoonline.com/wp-content/uploads/2023/09/shutterstock_769796665-1.jpg?quality=50&strip=all",
-      "path": "/TDR/9_Ethical_And_Legal_Considerations",
+      "path": "/blog-posts/9_Ethical_And_Legal_Considerations.mdx",
       "keywords": [
         "Ethical SEO",
         "White Hat SEO",
@@ -143,7 +143,7 @@
       "date": "1 October 2023",
       "author": "Joel Taylor",
       "cover": "/blog/Mastering Texture Mapping with Pygame A Comprehensive Guide/cover.jpg",
-      "path": "/blog/Mastering Texture Mapping with Pygame A Comprehensive Guide",
+      "path": "/blog-posts/Mastering Texture Mapping with Pygame A Comprehensive Guide.mdx",
       "keywords": ["Cryptocurrency"]
     },
     {
@@ -152,7 +152,7 @@
       "date": "30 September 2023",
       "author": "Joel Taylor",
       "cover": "/blog/Top Games for Oculus Quest 3/cover.webp",
-      "path": "/blog/Top Games for Oculus Quest 3 Must Play Titles",
+      "path": "/blog-posts/Top Games for Oculus Quest 3 Must Play Titles",
       "keywords": ["Virtual Reality"]
     },
     {
@@ -161,7 +161,7 @@
       "date": "1 October 2023",
       "author": "Joel Taylor",
       "cover": "/blog/The Ultimate Guide to Upgrading Your Steam Deck/cover.jpg",
-      "path": "/blog/The Ultimate Guide to Upgrading Your Steam Deck",
+      "path": "/blog-posts/The Ultimate Guide to Upgrading Your Steam Deck.mdx",
       "keywords": ["Hardware Mods"]
     },
     {
@@ -170,7 +170,7 @@
       "date": "1 October 2023",
       "author": "Joel Taylor",
       "cover": "/blog/BTCPay Server's Seamless Integration with React Apps/cover.jpg",
-      "path": "/blog/BTCPay Server's Seamless Integration with React Apps",
+      "path": "/blog-posts/BTCPay Server's Seamless Integration with React Apps.mdx",
       "keywords": ["Cryptocurrency"]
     },
     {
@@ -179,7 +179,7 @@
       "date": "1 October 2023",
       "author": "Joel Taylor",
       "cover": "/blog/Understanding and Resolving iPhone 15 Overheating Issues/cover.webp",
-      "path": "/blog/Understanding and Resolving iPhone 15 Overheating Issues",
+      "path": "/blog-posts/Understanding and Resolving iPhone 15 Overheating Issues.mdx",
       "keywords": ["Apple"]
     },
     {
@@ -188,7 +188,7 @@
       "date": "30 September 2023",
       "author": "Joel Taylor",
       "cover": "/blog/Transforming Patient Care With AI-Powered Monitoring/cover.jpg",
-      "path": "/blog/Transforming Patient Care With AI-Powered Monitoring",
+      "path": "/blog-posts/Transforming Patient Care With AI-Powered Monitoring.mdx",
       "keywords": ["Artificial Intelligence"]
     }
   ]

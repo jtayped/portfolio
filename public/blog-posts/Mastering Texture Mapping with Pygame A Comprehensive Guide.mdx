@@ -1,0 +1,159 @@
+In the realm of computer graphics, we often see modern techniques like texture mapping taking center stage. However, let's take a step back and explore the world of texture mapping from the past, back when hardware support was scarce, and CPUs were the workhorses of rendering. In this journey, we will harness the power of Python, NumPy, and the wonderful Pygame library to create our own texture mapping adventure.
+
+In this tutorial, we'll venture into the world of texture mapping with Python and Pygame. I've used images from the Sound Vision demo and credited Red Baron, Overlander, and Jellybean for their contributions.
+
+## Texture Mapping in 3D Space
+
+As you can see from the article cover, we can map images onto any flat, convex surface in 3D space. Our canvas includes cubes (squares), dodecahedrons (pentagons), and icosahedrons (triangles). To embark on this journey yourself, you can find the Python script and images in this [GitHub repository](https://github.com/zeque92/RealTime3DwithPython). When you run the program, you can control the object's rotation using cursor keys and the 'a' and 'z' keys to rotate around the three axes.
+
+## Understanding Affine Texture Mapping
+
+Mapping a texture (an image) onto a rotated 3D flat surface requires creating a new image of a different size and shape. In this tutorial, we'll focus on a straightforward technique called [Affine Texture Mapping](https://en.wikipedia.org/wiki/Texture_mapping#Affine_texture_mapping). According to Wikipedia, this is the fastest form of texture mapping, and it dates back to the original PlayStation hardware in 1994.
+
+Affine mapping involves linearly interpolating the pixels on the rotated surface to the original image and assigning a color to each pixel. While there are more advanced methods for handling perspective distortions or intelligent image sampling, this tutorial opts for simplicity to keep the processing cost low.
+
+The process involves [linear interpolation](https://en.wikipedia.org/wiki/Linear_interpolation) between two coordinates. For a square, even when rotated at any angle, it's relatively straightforward to interpolate between the pixels on opposite sides. However, when dealing with non-horizontal or non-vertical lines, the process becomes more complex, with some pixels being processed multiple times or skipped entirely. To address this, we opt for a line-by-line approach (horizontally or vertically) to ensure each pixel is processed precisely once.
+
+## How to Implement Texture Mapping
+
+To implement texture mapping, we'll define the picture to be used for each surface (the face of the cube) and the respective coordinates within the picture for each node (corner) of the surface.
+
+In the image below, observe the blue triangle, red trapezoid (a trapezium in Britain), and green triangle. These represent segments that can each be processed through linear interpolation.
+
+![Two cubes facing different directions with linearly interpolated textures on them](/blog/Mastering%20Texture%20Mapping%20with%20Pygame%20A%20Comprehensive%20Guide/cubes1.jpg)
+
+Here's how we define the cube object:
+
+```python
+# Define a cube.
+self.nodes = (100.0 * np.array([
+    [ 1,  1,  1],
+    [ 1,  1, -1],
+    [-1,  1, -1],
+    [-1,  1,  1],
+    [ 1, -1,  1],
+    [ 1, -1, -1],
+    [-1, -1, -1],
+    [-1, -1,  1]
+])).astype(np.float)
+
+self.surfaces = np.array([
+    [0, 1, 2, 3],
+    [4, 7, 6, 5],
+    [0, 4, 5, 1],
+    [2, 6, 7, 3],
+    [1, 5, 6, 2],
+    [3, 7, 4, 0]
+])
+```
+
+The cube's nodes are located 100 units from the origin in each axis, and the six surfaces are defined by the four nodes at their corners. Each surface is defined using a clockwise order to determine whether it "faces" towards the viewer.
+
+Now, let's dive into the map_texture function:
+
+```python
+def map_texture(self, surface):
+    # Build a node array where the nodes appear twice - enabling going "over" the right edge
+    nodes_x2 = np.hstack((self.surfaces[surface, :], self.surfaces[surface, :]))
+
+    # Find the topmost node (minimum y coordinate) and maximum y coordinate
+    min_y_node = np.argmin(self.trans_nodes[self.surfaces[surface, :], 1])
+    max_y = np.max(self.trans_nodes[self.surfaces[surface, :], 1])
+    y_beg = self.trans_nodes[nodes_x2[min_y_node], 1]
+
+    # When going "left" and "right" through the nodes, start with the top node in both
+    (left, right) = (min_y_node, min_y_node)
+```
+
+The map_texture function takes a surface as its argument (ranging from 0 to 5 for the cube object). It starts by setting up some initial variables, including nodes_x2, which duplicates the surface's nodes to facilitate traversal over the right edge.
+
+Continuing with the map_texture function:
+
+```python
+# Loop through each section from this y coordinate to the next y coordinate until all sections are processed
+while y_beg < max_y:
+
+    # Calculate image node coordinates for left and right sides
+    img_node_beg = image_nodes[np.array([left % image_node_cnt, right % image_node_cnt]), :]
+    img_node_end = image_nodes[np.array([(left - 1) % image_node_cnt, (right + 1) % image_node_cnt]), :]
+    img_node_diff = img_node_end - img_node_beg
+
+    # Calculate cube node coordinates for left and right sides
+    node_beg = self.trans_nodes[nodes_x2[np.array([left, right])], :]
+    node_end = self.trans_nodes[nodes_x2[np.array([left - 1, right + 1])], :]
+    node_diff = node_end - node_beg
+```
+
+This part of the function sets up coordinates for the image nodes and cube nodes for the current section. It ensures that we correctly handle the left and right sides and their corresponding nodes.
+
+Now, let's dig into the section-by-section processing:
+
+```python
+# Determine section end (y_end)
+if node_end[1, 1] < node_end[0, 1]:
+    # Right node comes first (i.e., its Y coordinate is before left's)
+    right += 1
+    y_end = node_end[1, 1]
+
+else:
+    # Left node comes first (i.e., its Y coordinate is before or equal to right's)
+    left -= 1
+    y_end = node_end[0, 1]
+```
+
+This code snippet calculates where the current section ends based on whether the right node or left node has a lower Y coordinate. It also adjusts the left and right pointers accordingly for the next section.
+
+Now, it's time to delve into the pixel-by-pixel processing:
+
+```python
+# Check if there are lines to process in this section
+if y_end > y_beg:
+    y = np.arange(y_beg, y_end, dtype=np.int16)
+
+    # Calculate node multipliers for each Y for left and right sides
+    m = (y[:, None] - node_beg[:, 1]) / node_diff[:, 1]
+
+    # Calculate respective screen X coordinates for left and right sides
+    x = (np.round(node_beg[:, 0] + m * node_diff[:, 0])).astype(np.int16)
+    x_cnt = np.abs(x[:, 1] - x[:, 0])  # Number of pixels on each horizontal line
+
+    # Calculate cumulative pixel count for data storage offset
+    x_cnt_cum = np.hstack((np.array([0]), np.cumsum(x_cnt))) + self.scr_cnt
+
+    # Calculate respective image coordinates by interpolating between image nodes (usually corners)
+    img_l = img_node_beg[0, :] + m[:, 0:1] * img_node_diff[0, :]
+    img_r = img_node_beg[1, :] + m[:, 1:2] * img_node_diff[1, :]
+```
+
+This part of the function sets up the Y coordinates for each horizontal line, calculates the respective left and right X coordinates, and computes the number of pixels on each horizontal line. We also determine the cumulative pixel count to use as a data pointer when storing the results. Finally, we interpolate between the image nodes to calculate the image coordinates for each pixel in the section.
+
+Now, we're ready to process each horizontal line and extract the colors:
+
+```python
+for y_line in range(y_end - y_beg):
+    # Process each horizontal line
+    if x_cnt[y_line] > 1:
+        # Calculate X coordinates for the line
+        scr_x = np.arange(x[y_line, 0], x[y_line, 1], np.sign(x[y_line, 1] - x[y_line, 0]), dtype=np.int16)
+        # Store X coordinates
+        self.scr_x[x_cnt_cum[y_line]:x_cnt_cum[y_line + 1]] = scr_x
+        # Store Y coordinates (Y is constant)
+        self.scr_y[x_cnt_cum[y_line]:x_cnt_cum[y_line + 1]] = y_line + y_beg
+        # Interpolate between line begin and end coordinates in the image
+        self.img_xy[x_cnt_cum[y_line]:x_cnt_cum[y_line + 1], :] = (img_l[y_line, :] + ((scr_x - scr_x[0]) / (scr_x[-1] - scr_x[0]))[:, None] * (img_r[y_line, :] - img_l[y_line, :])).astype(np.int16)
+        # Store the color found in each interpolated pixel in self.scr_col
+        self.scr_col[x_cnt_cum[y_line]:x_cnt_cum[y_line + 1]] = image_array[self.img_xy[x_cnt_cum[y_line]:x_cnt_cum[y_line + 1], 0], self.img_xy[x_cnt_cum[y_line]:x_cnt_cum[y_line + 1], 1]]
+```
+
+This section processes each horizontal line, calculating X coordinates, storing X and Y coordinates, and interpolating between image coordinates to find the color of each pixel. The color is retrieved from the image_array, which represents the image using pygame.surfarray.pixels2d.
+
+With all sections processed, we're ready to update the screen:
+
+```python
+# Update the screen by setting the colors for the mapped pixels
+if self.scr_cnt > 0:
+    screen_array = pygame.surfarray.pixels2d(self.screen)
+    screen_array[self.scr_x[0:self.scr_cnt], self.scr_y[0:self.scr_cnt]] = self.scr_col[0:self.scr_cnt]
+```
+
+Updating the screen involves setting the colors for the mapped pixels in one go, optimizing performance.
