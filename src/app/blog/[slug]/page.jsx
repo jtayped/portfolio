@@ -9,6 +9,9 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeSanitize from "rehype-sanitize";
 import rehypeStringify from "rehype-stringify";
+import Image from "next/image";
+import Link from "next/link";
+import Me from "@/../public/me.jpg";
 
 const Page = ({ params }) => {
   const [post, setPost] = useState(null);
@@ -49,8 +52,39 @@ const Page = ({ params }) => {
   }, [params.slug]);
 
   return (
-    <div>
-      {post && <div dangerouslySetInnerHTML={{ __html: post.htmlContent }} />}
+    <div className="relative text-black px-8 py-10 flex items-center justify-center mt-[100px]">
+      <main className="flex items-center justify-center">
+        {post && (
+          <div className="flex flex-col gap-4 max-w-prose">
+            <Image
+              src={post.cover}
+              width={900}
+              height={350}
+              className="w-full h-[350px]"
+            ></Image>
+            <div className="flex items-center gap-3 mt-2">
+              <Link href="/about">
+                <Image
+                  src={Me}
+                  width={35}
+                  height={35}
+                  className="rounded-full"
+                ></Image>
+              </Link>
+              <div className="flex flex-col text-xs select-none">
+                <Link href="/about" className="font-bold hover:underline">
+                  Joel Taylor
+                </Link>
+                <time>{post.date}</time>
+              </div>
+            </div>
+            <article className="prose prose-red max-w-prose mx-auto prose-pre:bg-slate-300 prose-code:text-black prose-pre:border prose-pre:shadow">
+              <h1 className="text-5xl font-bold">{post.title}</h1>
+              <div dangerouslySetInnerHTML={{ __html: post.htmlContent }} />
+            </article>
+          </div>
+        )}
+      </main>
     </div>
   );
 };
