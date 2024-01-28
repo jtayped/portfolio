@@ -17,7 +17,9 @@ const page = () => {
       <main className="max-w-[900px] flex items-center justify-center">
         <div>
           <div className="text-center">
-            <h1 className="text-6xl font-bold">Check out my blog!</h1>
+            <h1 className="text-4xl sm:text-6xl font-bold">
+              Check out my blog!
+            </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
               debitis. Eius expedita illum vel similique cupiditate accusamus,
