@@ -5,12 +5,20 @@ import { Posts, Search } from "./components";
 import PostsData from "./posts";
 
 const page = () => {
-  const [posts, setPosts] = useState(null);
+  const [posts, setPosts] = useState(PostsData.posts);
   const [query, setQuery] = useState("");
 
   useEffect(() => {
-    setPosts(posts);
-  }, []);
+    // Update filteredPosts whenever searchQuery or posts change
+    const filtered = PostsData.posts.filter((post) => {
+      const titleMatch = post.title.toLowerCase().includes(query.toLowerCase());
+      const keywordMatch = post.keywords.some((keyword) =>
+        keyword.toLowerCase().includes(query.toLowerCase())
+      );
+      return titleMatch || keywordMatch;
+    });
+    setPosts(filtered);
+  }, [query]);
 
   return (
     <div className="relative text-black px-8 py-10 flex items-center justify-center mt-[100px] sm:mt-[200px]">
@@ -29,7 +37,7 @@ const page = () => {
           </div>
           <div className="flex flex-col gap-10 mt-10">
             <Search setQuery={setQuery} />
-            <Posts posts={PostsData.posts} />
+            <Posts posts={posts} />
           </div>
         </div>
       </main>
