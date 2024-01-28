@@ -10,6 +10,11 @@ export const pages = [
     accent: false,
   },
   {
+    name: "Blog",
+    path: "/blog",
+    accent: false,
+  },
+  {
     name: "Contact",
     path: "/#contact",
     accent: true,
