@@ -7,26 +7,33 @@ const PostPreview = ({ post }) => {
   return (
     <div className="bg-black text-white flex flex-col justify-between h-full p-4 rounded-lg">
       <div>
-        <Image
-          src={post.cover}
-          width={300}
-          height={200}
-          className="object-cover w-full h-[150px] rounded-sm"
-        ></Image>
-        <div className="flex items-center gap-3 mt-2">
+        <Link href="/a">
           <Image
-            src={Me}
-            width={35}
-            height={35}
-            className="rounded-full"
+            src={post.cover}
+            width={300}
+            height={200}
+            className="object-cover w-full h-[150px] rounded-sm"
           ></Image>
-          <div className="flex flex-col text-xs">
-            <p className="font-bold">Joel Taylor</p>
+        </Link>
+
+        <div className="flex items-center gap-3 mt-2">
+          <Link href="/about">
+            <Image
+              src={Me}
+              width={35}
+              height={35}
+              className="rounded-full"
+            ></Image>
+          </Link>
+          <div className="flex flex-col text-xs select-none">
+            <Link href="/about" className="font-bold hover:underline">
+              Joel Taylor
+            </Link>
             <time>{post.date}</time>
           </div>
         </div>
-        <h2 className="text-lg font-bold mt-2">{post.title}</h2>
-        <p className="text-sm">{post.description}</p>
+        <h2 className="text-lg font-bold mt-2 leading-snug">{post.title}</h2>
+        <p className="text-sm mt-1">{post.description}</p>
       </div>
       <Link
         href="/a"
