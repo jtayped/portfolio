@@ -2,7 +2,6 @@ import React from "react";
 import { PostPreview } from "./previews";
 
 const Posts = ({ posts }) => {
-console.log("aaa")
   const numColumns = 3;
   // Create a new array with the desired order of posts
   const orderedPosts = posts.reduce((acc, post, index) => {
