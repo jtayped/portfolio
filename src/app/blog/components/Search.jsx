@@ -3,7 +3,7 @@ import { BsSearch } from "react-icons/bs";
 
 const Search = ({ setQuery }) => {
   return (
-    <div className="flex items-center pl-2 py-1 gap-4 border-b border-black">
+    <div className="flex items-center pl-2 py-2 gap-4 border-b border-black">
       <BsSearch />
       <input
         type="text"
