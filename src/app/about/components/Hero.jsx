@@ -14,10 +14,10 @@ const Hero = () => {
           <div className="max-w-[400px] text-center sm:text-left">
             <h1 className="text-6xl font-bold">About Me</h1>
             <p>
-              From building my first computer at 13 to excelling in web
-              development, my journey reflects adaptability and continuous
-              learning. As a passionate web developer, let's collaborate to turn
-              your digital dreams into reality.
+              I'm Joel Taylor, a 17-year-old from Catalonia, Spain, navigating
+              Batxillerat with a passion for Computer Science. Fluent in
+              Spanish, Catalan, and English, I'm driven by curiosity and
+              immersed in coding.
             </p>
           </div>
         </div>

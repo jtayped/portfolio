@@ -43,7 +43,7 @@ export const events = [
     age: 16,
     image: "/timeline/fll-torremolinos-2022.jpg",
     description:
-      "In the concluding chapter of my three-year journey in the First Lego League, this final season held immense emotional value. Determined to secure qualification, as the lead programmer I adopted an innovative strategy, shifting from Lego Mindstorms to Python programming. Despite the complexity, the move provided us with a competitive edge. The announcement of our qualification marked a triumphant moment, earning us a spot in the finals in Torremolinos, Málaga, and closing the FLL chapter on a high note.",
+      "In the concluding chapter of my four-year journey in the First Lego League, this final season held immense emotional value. Determined to secure qualification, as the lead programmer I adopted an innovative strategy, shifting from Lego Mindstorms to Python programming. Despite the complexity, the move provided us with a competitive edge. The announcement of our qualification marked a triumphant moment, earning us a spot in the finals in Torremolinos, Málaga, and closing the FLL chapter on a high note.",
   },
   {
     name: "Web Development Era",
