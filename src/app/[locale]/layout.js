@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./components";
+import { useLocale } from "next-intl";
+import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +23,14 @@ export const metadata = {
   ],
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, params }) {
+  const locale = useLocale();
+
+  if (params.locale !== locale) {
+    notFound();
+  }
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${inter.className}`}>
         <Navbar />
         {children}
