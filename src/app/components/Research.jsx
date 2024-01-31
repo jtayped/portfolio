@@ -24,7 +24,7 @@ const Research = () => {
             </p>
             <Link
               href="/research"
-              className="flex items-center gap-2 border border-black text-black w-fit px-2 py-1 rounded mt-2 text-sm hover:bg-black hover:text-white transition-colors duration-[25ms]"
+              className="flex items-center gap-2 border border-black text-black w-fit px-2 py-1 rounded mt-2 text-sm hover:bg-black/5 transition-colors"
             >
               <BsFillFileTextFill />
               Learn more

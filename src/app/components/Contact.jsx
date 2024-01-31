@@ -38,14 +38,14 @@ const Contact = () => {
           <div className="flex gap-1 mt-2">
             <Link
               href="mailto:jtayped@gmail.com"
-              className="px-3 py-1 bg-black text-yellow rounded flex items-center gap-2 text-sm"
+              className="px-3 py-1 bg-black hover:bg-black/90 transition-colors text-yellow rounded flex items-center gap-2 text-sm"
             >
               <MdAlternateEmail />
               Email
             </Link>
             <Link
               href="https://www.instagram.com/jtayped_"
-              className="px-3 py-1 border border-black text-black rounded flex items-center gap-2 text-sm"
+              className="px-3 py-1 border border-black text-black hover:bg-black/5 transition-colors rounded flex items-center gap-2 text-sm"
             >
               <BsInstagram />
               Instagram
@@ -80,7 +80,10 @@ const Contact = () => {
               autoComplete="off"
             ></textarea>
           </div>
-          <button type="submit" className="bg-black py-2 text-yellow text-sm">
+          <button
+            type="submit"
+            className="bg-black hover:bg-black/95 py-2 text-yellow text-sm"
+          >
             Send
           </button>
         </form>

@@ -20,13 +20,13 @@ const Hero = () => {
           <div className="flex gap-2 mt-4 text-sm md:text-md">
             <Link
               href="/#contact"
-              className="bg-black border border-black text-yellow px-3 py-1 rounded-sm shadow-lg"
+              className="bg-black border border-black hover:bg-black/95 shadow hover:shadow-lg transition-all text-white px-3 py-1 rounded-sm"
             >
               Contact me!
             </Link>
             <Link
               href="/#portfolio"
-              className="border border-black px-3 py-1 rounded-sm shadow"
+              className="border border-black px-3 py-1 rounded-sm shadow hover:bg-black/5 transition-colors"
             >
               View my work
             </Link>
