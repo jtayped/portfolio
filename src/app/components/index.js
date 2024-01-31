@@ -6,3 +6,4 @@ export { default as Testimonials } from "./Testimonials";
 export { default as Contact } from "./Contact";
 export { default as Menu } from "./Menu";
 export { default as Research } from "./Research";
+export { default as MockupViewer } from "./MockupViewer";

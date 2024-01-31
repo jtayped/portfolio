@@ -3,15 +3,17 @@ import Link from "next/link";
 import { work } from "@/constants/portfolio";
 import PortfolioPiece from "./PortfolioPiece";
 import { BsGithub } from "react-icons/bs";
+import { MockupViewer } from ".";
 
 const Portfolio = () => {
   return (
     <div className="relative text-black px-8 py-10 flex items-center justify-center">
       <a className="absolute -top-[100px] sm:-top-[250px]" id="portfolio"></a>
       <div className="w-[900px]">
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2">
+          <MockupViewer />
           <div className="flex justify-center">
-            <div className="text-center max-w-[500px] flex flex-col items-center">
+            <div className="max-w-[750px] flex flex-col">
               <div className="flex items-center gap-3">
                 <h2 className="text-3xl font-bold">Portfolio</h2>
                 <Link href="https://github.com/jtayped">
@@ -28,17 +30,6 @@ const Portfolio = () => {
                 .
               </p>
             </div>
-          </div>
-
-          <div className="grid grid-rows-2 sm:grid-cols-2 sm:grid-rows-1 gap-3">
-            <div className="grid grid-cols-2 gap-3">
-              <PortfolioPiece piece={work[3]} />
-              <div className="grid grid-rows-2 gap-3">
-                <PortfolioPiece piece={work[2]} />
-                <PortfolioPiece piece={work[0]} />
-              </div>
-            </div>
-            <PortfolioPiece piece={work[1]} />
           </div>
         </div>
       </div>
