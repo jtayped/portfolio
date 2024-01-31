@@ -15,7 +15,7 @@ const Navbar = () => {
             key={i}
             className={`${
               page.accent
-                ? "bg-black text-yellow px-3 py-1 rounded-sm shadow"
+                ? "bg-black text-yellow hover:bg-black/90 transition-colors px-3 py-1 rounded-sm shadow"
                 : "tracking-wider"
             }`}
           >
