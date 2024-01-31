@@ -1,7 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { work } from "@/constants/portfolio";
-import PortfolioPiece from "./PortfolioPiece";
 import { BsGithub } from "react-icons/bs";
 import { MockupViewer } from ".";
 
