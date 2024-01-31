@@ -8,15 +8,7 @@ const Research = () => {
   return (
     <div className="text-black px-8 py-10 flex items-center justify-center">
       <div className="w-[900px]">
-        <div className="flex flex-col-reverse md:grid md:grid-cols-2">
-          <div>
-            <Image
-              src={SEOImage}
-              width={400}
-              height={200}
-              className="shadow rounded"
-            ></Image>
-          </div>
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-10">
           <div>
             <p className="bg-black text-xs text-white w-fit px-1 py-0.5 rounded">
               NEW PROJECT
@@ -37,6 +29,14 @@ const Research = () => {
               <BsFillFileTextFill />
               Learn more
             </Link>
+          </div>
+          <div>
+            <Image
+              src={SEOImage}
+              width={400}
+              height={200}
+              className="shadow rounded"
+            ></Image>
           </div>
         </div>
       </div>
