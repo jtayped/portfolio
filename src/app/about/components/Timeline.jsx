@@ -63,7 +63,7 @@ const Timeline = () => {
                     src={event.image}
                     height={200}
                     width={400}
-                    className="h-[160px] max-w-[350px] object-cover rounded"
+                    className="h-[160px] w-[350px] object-cover rounded"
                     alt={event.name}
                   ></Image>
                 ) : null}
