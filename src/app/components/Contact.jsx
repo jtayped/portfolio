@@ -27,7 +27,7 @@ const Contact = () => {
       id="contact"
     >
       <div className="w-[900px] flex flex-col sm:grid sm:grid-cols-2">
-        <div className="flex flex-col sm:max-w-[400px] sm:pr-5">
+        <div className="flex flex-col sm:pr-5">
           <h2 className="text-3xl font-bold">Contact</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
@@ -52,41 +52,51 @@ const Contact = () => {
             </Link>
           </div>
         </div>
-        <form
-          onSubmit={(e) => handleSubmit(e)}
-          className="flex flex-col gap-3 mt-5"
-        >
-          <div className="grid grid-cols-2 gap-3">
-            <ContactInput
-              placeholder="Name"
-              type="text"
-              autocomplete="given-name"
-            />
-            <ContactInput
-              placeholder="Last Name"
-              type="text"
-              autocomplete="family-name"
-            />
-          </div>
-          <ContactInput placeholder="Email" type="email" autocomplete="email" />
-          <ContactInput placeholder="Subject" type="text" autocomplete="off" />
-          <div className="border border-black p-2">
-            <textarea
-              className="w-full bg-transparent outline-none placeholder:text-black placeholder:text-sm"
-              name="Message"
-              placeholder="Message"
-              cols="30"
-              rows="8"
-              autoComplete="off"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="bg-black hover:bg-black/95 py-2 text-yellow text-sm"
+        <div className="w-full h-full flex items-center justify-end">
+          <form
+            onSubmit={(e) => handleSubmit(e)}
+            className="flex flex-col gap-2 mt-5 max-w-[370px]"
           >
-            Send
-          </button>
-        </form>
+            <div className="grid grid-cols-2 gap-3">
+              <ContactInput
+                placeholder="Name"
+                type="text"
+                autocomplete="given-name"
+              />
+              <ContactInput
+                placeholder="Last Name"
+                type="text"
+                autocomplete="family-name"
+              />
+            </div>
+            <ContactInput
+              placeholder="Email"
+              type="email"
+              autocomplete="email"
+            />
+            <ContactInput
+              placeholder="Subject"
+              type="text"
+              autocomplete="off"
+            />
+            <div className="border border-black p-2">
+              <textarea
+                className="w-full bg-transparent outline-none placeholder:text-black placeholder:text-sm"
+                name="Message"
+                placeholder="Message"
+                cols="30"
+                rows="8"
+                autoComplete="off"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="bg-black hover:bg-black/95 py-2 text-yellow text-sm"
+            >
+              Send
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
