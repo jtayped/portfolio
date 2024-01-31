@@ -3,15 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Cube from "@/../public/cube.svg";
 import { BsMouse, BsChevronDown } from "react-icons/bs";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations("hero");
   return (
     <div className="relative h-screen flex justify-start sm:justify-center items-center text-black">
       <div className="max-w-[1500px] flex items-center px-8 justify-center">
         <div className="w-full flex flex-col items-center sm:items-start text-center sm:text-left sm:max-w-[600px]">
-          <h1 className="text-4xl md:text-6xl font-bold">
-            Hi! I am Joel Taylor
-          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold">{t("title")}</h1>
           <p className="text-sm md:text-lg">
             a young and passionate front-end developer crafting innovative and
             precise web solutions. Join me on a journey of continuous learning,
