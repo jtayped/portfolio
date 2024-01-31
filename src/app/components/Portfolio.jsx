@@ -10,7 +10,7 @@ const Portfolio = () => {
     <div className="relative text-black px-8 py-10 flex items-center justify-center">
       <a className="absolute -top-[100px] sm:-top-[250px]" id="portfolio"></a>
       <div className="w-[900px]">
-        <div className="flex flex-col-reverse md:grid md:grid-cols-2">
+        <div className="flex flex-col-reverse sm:grid sm:grid-cols-2 gap-10 sm:gap-0">
           <MockupViewer />
           <div className="flex justify-center">
             <div className="max-w-[750px] flex flex-col">
