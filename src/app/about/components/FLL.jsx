@@ -27,14 +27,14 @@ const FLL = () => {
           </p>
           <Link
             href="https://www.firstlegoleague.org/"
-            className="border border-black text-black px-2 rounded w-fit gap-2 flex items-center mt-3 group hover:text-white hover:bg-black transition-colors duration-[25ms]"
+            className="border border-black text-black px-2 rounded w-fit gap-2 flex items-center mt-3 group hover:bg-black/5 transition-colors"
           >
             <Image
               src={FLLIcon}
               width={35}
               height={35}
               alt="FLL Logo"
-              className="group-hover:invert-0 invert transition-all duration-[25ms]"
+              className="invert"
             ></Image>
             Learn more
           </Link>

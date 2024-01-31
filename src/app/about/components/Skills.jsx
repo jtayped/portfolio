@@ -17,7 +17,7 @@ const Skills = () => {
           </p>
           <Link
             href="https://github.com/jtayped"
-            className="flex gap-3 items-center px-3 py-1.5 rounded bg-black w-fit text-white mt-2"
+            className="flex gap-3 items-center px-3 py-1.5 rounded bg-black w-fit text-white mt-2 hover:bg-black/90 transition-colors"
           >
             <BsGithub size={18} />
             <p className="text-sm">GitHub</p>

@@ -87,7 +87,7 @@ const Timeline = () => {
                   journey embodies a commitment to innovation and continuous
                   learning.
                 </p>
-                <p className="text-base mb-3">
+                <p className="text-base mb-4">
                   Let's collaborate, innovate, and bring your digital
                   aspirations to life. Today is not just another day; it's an
                   opportunity to create something extraordinary. Let's make it
@@ -95,7 +95,7 @@ const Timeline = () => {
                 </p>
                 <Link
                   href="/#contact"
-                  className="p-2 px-4 rounded bg-black text-yellow"
+                  className="p-2 px-4 rounded bg-black text-white hover:bg-black/90 text-sm"
                 >
                   TAKE ACTION!
                 </Link>
