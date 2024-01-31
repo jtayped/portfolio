@@ -7,12 +7,12 @@
   },
   "about": {
     "title": "Sobre mí",
-    "description": "Desde construir mi primera computadora a los 13 años hasta destacarme en la First Lego League y aventurarme en el desarrollo web, mi trayectoria es un testimonio de adaptabilidad y aprendizaje continuo. Hoy, como apasionado desarrollador web, te invito a colaborar y convertir tus sueños digitales en realidad. ¡Hagámoslo juntos!",
+    "description": "Desde construir mi primera computadora a los 13 años hasta participar en la First Lego League y aventurarme en el desarrollo web, mi trayectoria es un testimonio de adaptabilidad y aprendizaje continuo. Hoy, como desarrollador web, te invito a colaborar y convertir tus sueños digitales en realidad. ¡Hagámoslo juntos!",
     "button": "Leer más"
   },
   "portfolio": {
     "title": "Portafolio",
-    "description": "Sumérgete en mi portafolio que muestra una variedad de proyectos impactantes, demostrando experiencia en desarrollo web y más allá. Para ver el código en detalle, visita mi GitHub.",
+    "description": "Descubre mi portafolio que muestra una variedad de proyectos impactantes, demostrando experiencia en desarrollo web y más allá. Para ver el código en detalle, visita mi GitHub.",
     "button": "GitHub"
   },
   "researchProject": {
@@ -23,7 +23,7 @@
   },
   "contact": {
     "title": "Contacto",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae delectus mollitia asperiores? Accusamus enim perspiciatis, eius nihil voluptates iusto, explicabo aut nam veniam dolor excepturi fuga beatae debitis ipsam maxime dicta porro minima optio molestias!",
+    "description": "No dudes en ponerte en contacto. Ya sea que compartas una pasión por la programación o que tu empresa busque colaboración, estoy emocionado por conectar contigo. Tu participación es crucial para dar forma a nuestra experiencia juntos.",
     "accentBtn": "Correo electrónico",
     "secondaryBtn": "Instagram",
     "name": "Nombre",
