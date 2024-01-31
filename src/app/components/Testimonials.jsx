@@ -1,7 +1,10 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { testimonials } from "@/constants/testimonials";
 import { BsFillStarFill } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
@@ -16,9 +19,15 @@ const Testimonials = () => {
                   <ul className="flex items-start gap-1">
                     {Array.from({ length: testimonial.stars }).map(
                       (_, index) => (
-                        <li key={index}>
+                        <motion.li
+                          key={index}
+                          viewport={{ once: true }}
+                          initial={{ rotate: 90, y: 5, opacity: 0 }}
+                          whileInView={{ rotate: 0, y: 0, opacity: 1 }}
+                          transition={{ delay: index * 0.05, duration: 0.15 }}
+                        >
                           <BsFillStarFill className="text-yellow" />
-                        </li>
+                        </motion.li>
                       )
                     )}
                   </ul>
