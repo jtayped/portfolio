@@ -30,6 +30,7 @@ const Testimonials = () => {
                       width={30}
                       height={30}
                       className="rounded-full bg-white"
+                      alt={testimonial.name}
                     ></Image>
                     <div className="flex flex-col">
                       <p className="text-sm font-bold leading-tight">

@@ -36,6 +36,7 @@ const Research = () => {
               width={400}
               height={200}
               className="shadow rounded"
+              alt="Scrabble pieces spelling SEO"
             ></Image>
           </div>
         </div>

@@ -64,6 +64,7 @@ const Timeline = () => {
                     height={200}
                     width={400}
                     className="h-[160px] max-w-[350px] object-cover rounded"
+                    alt={event.name}
                   ></Image>
                 ) : null}
               </div>

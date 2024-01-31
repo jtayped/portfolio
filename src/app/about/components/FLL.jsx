@@ -12,6 +12,7 @@ const FLL = () => {
           src={Team}
           width={700}
           height={700}
+          alt="FLL teams in Torremolinos"
           className="object-cover sm:max-w-[400px] aspect-square rounded"
         ></Image>
         <div>
@@ -32,6 +33,7 @@ const FLL = () => {
               src={FLLIcon}
               width={35}
               height={35}
+              alt="FLL Logo"
               className="group-hover:invert-0 invert transition-all duration-[25ms]"
             ></Image>
             Learn more
