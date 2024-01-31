@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { work } from "@/constants/portfolio";
-import { motion, useMotionValue } from "framer-motion";
-import Link from "next/link";
+import { motion, useMotionValue, useMotionValueEvent } from "framer-motion";
 
 const DRAG_BUFFER = 25;
+const AUTO_DELAY = 5000;
 
 const Images = ({ imgIndex }) => {
   return (
@@ -53,6 +53,15 @@ const MockupViewer = () => {
   const [imgIndex, setIndex] = useState(0);
 
   const dragX = useMotionValue(0);
+  const dragXProgress = useMotionValue(0);
+
+  useMotionValueEvent(dragX, "change", (latest) => {
+    if (typeof latest === "number" && dragging) {
+      dragXProgress.set(latest);
+    } else {
+      dragXProgress.set(0);
+    }
+  });
 
   const onDragStart = () => {
     setDragging(true);
@@ -68,6 +77,23 @@ const MockupViewer = () => {
     }
   };
 
+  useEffect(() => {
+    const intervalRef = setInterval(() => {
+      const x = dragXProgress.get();
+
+      if (x === 0) {
+        setIndex((pv) => {
+          if (pv === work.length - 1) {
+            return 0;
+          }
+          return pv + 1;
+        });
+      }
+    }, AUTO_DELAY);
+
+    return () => clearInterval(intervalRef);
+  }, []);
+
   return (
     <div className="flex flex-col">
       <div style={{ overflow: "hidden" }}>
@@ -80,7 +106,7 @@ const MockupViewer = () => {
               animate={{
                 translateX: `-${imgIndex * 100}%`,
               }}
-              transition={{ stiffness: 0.75 }}
+              transition={{ stiffness: 0.75, duration: 0.25 }}
               onDragStart={onDragStart}
               onDragEnd={onDragEnd}
               className="flex items-center h-full cursor-grab active:cursor-grabbing"
