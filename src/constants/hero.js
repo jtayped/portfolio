@@ -1,1 +1,0 @@
-export const title = "Hello! This is Joel Taylor"

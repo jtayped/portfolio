@@ -6,29 +6,25 @@ import { BsMouse, BsChevronDown } from "react-icons/bs";
 import { useTranslations } from "next-intl";
 
 const Hero = () => {
-  const t = useTranslations("hero");
+  const t = useTranslations("Index");
   return (
     <div className="relative h-screen flex justify-start sm:justify-center items-center text-black">
       <div className="max-w-[1500px] flex items-center px-8 justify-center">
         <div className="w-full flex flex-col items-center sm:items-start text-center sm:text-left sm:max-w-[600px]">
           <h1 className="text-4xl md:text-6xl font-bold">{t("title")}</h1>
-          <p className="text-sm md:text-lg">
-            a young and passionate front-end developer crafting innovative and
-            precise web solutions. Join me on a journey of continuous learning,
-            and let's create something extraordinary together.
-          </p>
+          <p className="text-sm md:text-lg">{t("description")}</p>
           <div className="flex gap-2 mt-4 text-sm md:text-md">
             <Link
               href="/#contact"
               className="bg-black border border-black hover:bg-black/95 shadow hover:shadow-lg transition-all text-white px-3 py-1 rounded-sm"
             >
-              Contact me!
+              {t("accentBtn")}
             </Link>
             <Link
               href="/#portfolio"
               className="border border-black px-3 py-1 rounded-sm shadow hover:bg-black/5 transition-colors"
             >
-              View my work
+              {t("secondaryBtn")}
             </Link>
           </div>
         </div>

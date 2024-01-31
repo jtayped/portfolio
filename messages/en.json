@@ -1,5 +1,36 @@
 {
-  "hero": {
-    "title": "Hi! I am Joel Taylor"
+  "Index": {
+    "title": "Hi! I am Joel Taylor",
+    "description": "a young and passionate front-end developer crafting innovative and precise web solutions. Join me on a journey of continuous learning, and let's create something extraordinary together.",
+    "accentBtn": "Contact me!",
+    "secondaryBtn": "View my work"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "From building my first computer at 13 to thriving in the First Lego League and venturing into web development, my journey is a testament to adaptability and continuous learning. Today, as a passionate web developer, I invite you to collaborate and turn your digital dreams into reality. Let's make it happen together!",
+    "button": "Read more"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Dive into my portfolio showcasing a spectrum of impactful projects, demonstrating expertise in web development and beyond. For an in-depth look at the code, visit my GitHub.",
+    "button": "GitHub"
+  },
+  "researchProject": {
+    "title": "Check out my Research Project!",
+    "description": "Have a look at my research project, 'SEO Practices to Improve Rankings in SERPs', delving into advanced SEO strategies using React JS and Tailwind CSS. From overcoming obstacles to transformative results.",
+    "button": "Learn more",
+    "tag": "NEW PROJECT"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae delectus mollitia asperiores? Accusamus enim perspiciatis, eius nihil voluptates iusto, explicabo aut nam veniam dolor excepturi fuga beatae debitis ipsam maxime dicta porro minima optio molestias!",
+    "accentBtn": "Email",
+    "secondaryBtn": "Instagram",
+    "name": "Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "sendBtn": "Send"
   }
 }
