@@ -41,6 +41,7 @@ const Hero = () => {
       </div>
       <div className="absolute left-1/2 -translate-x-1/2 bottom-[100px] flex flex-col items-center text-center gap-0.5 py-3 px-2 rounded-full">
         <BsMouse size={25} />
+        <p className="text-[8px] mt-1">SCROLL</p>
         <BsChevronDown />
       </div>
     </div>
