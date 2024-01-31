@@ -11,7 +11,7 @@ const Images = ({ imgIndex }) => {
   return (
     <>
       {work.map((piece, i) => (
-        <motion.div
+        <motion.a
           key={i}
           style={{ "--image-url": `url(${piece.image})` }}
           className="bg-[image:var(--image-url)] bg-cover h-[130px] w-[225px] shrink-0 bg-neutral-900"
@@ -24,7 +24,9 @@ const Images = ({ imgIndex }) => {
             stiffness: 400,
             damping: 50,
           }}
-        ></motion.div>
+          href={piece.href}
+          draggable="false"
+        />
       ))}
     </>
   );
