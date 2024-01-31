@@ -7,8 +7,8 @@ import { BsMouse, BsChevronDown } from "react-icons/bs";
 const Hero = () => {
   return (
     <div className="relative h-screen flex justify-start sm:justify-center items-center text-black">
-      <div className="max-w-[1500px] flex items-center sm:items-center px-8">
-        <div className="max-w-[300px] sm:max-w-[600px]">
+      <div className="max-w-[1500px] flex items-center px-8 justify-center">
+        <div className="w-full flex flex-col items-center sm:items-start text-center sm:text-left sm:max-w-[600px]">
           <h1 className="text-4xl md:text-6xl font-bold">
             Hi! I am Joel Taylor
           </h1>
