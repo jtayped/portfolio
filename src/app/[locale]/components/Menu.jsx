@@ -26,6 +26,7 @@ const Menu = () => {
           </Link>
           <button
             className="flex sm:hidden text-2xl"
+            aria-label="Menu"
             onClick={() => toggleSide()}
           >
             <BsXLg />
