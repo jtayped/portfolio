@@ -49,16 +49,6 @@ const Image = ({ piece }) => {
   );
 };
 
-const Images = () => {
-  return (
-    <>
-      {work.map((piece, i) => (
-        <Image key={i} piece={piece} />
-      ))}
-    </>
-  );
-};
-
 const Dots = ({ imgIndex, setImgIndex }) => {
   return (
     <div className="mt-3 flex items-center w-full justify-center gap-2">
@@ -138,7 +128,9 @@ const MockupViewer = () => {
               onDragEnd={onDragEnd}
               className="flex items-center h-full cursor-grab active:cursor-grabbing"
             >
-              <Images />
+              {work.map((piece, i) => (
+                <Image key={i} piece={piece} />
+              ))}
             </motion.div>
           </div>
         </div>
