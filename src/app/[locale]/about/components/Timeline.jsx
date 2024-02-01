@@ -1,7 +1,7 @@
 import React from "react";
 import { events } from "@/constants/timeline";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 
 const months = [
   "January",

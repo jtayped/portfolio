@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import Image from "next/image";
 import { BsFillFileTextFill } from "react-icons/bs";
 import SEOImage from "@/../public/research/seo.jpg";

@@ -1,7 +1,7 @@
 import React from "react";
 import { skills } from "@/constants/skills";
 import { BsGithub } from "react-icons/bs";
-import Link from "next/link";
+import { Link } from "@/navigation";
 
 const Skills = () => {
   return (

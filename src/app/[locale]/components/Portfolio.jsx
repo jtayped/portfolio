@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { BsGithub } from "react-icons/bs";
 import { MockupViewer } from ".";
 import { useTranslations } from "next-intl";

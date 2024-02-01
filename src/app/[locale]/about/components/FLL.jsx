@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import Image from "next/image";
 import FLLIcon from "@/@/../../public/icons/fll.png";
 import Team from "@/@/../../public/fll/torremolinos-teams.png";

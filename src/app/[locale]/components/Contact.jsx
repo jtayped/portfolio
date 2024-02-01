@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { MdAlternateEmail } from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
 import { useTranslations } from "next-intl";

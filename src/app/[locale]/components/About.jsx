@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import Me from "@/../public/about/me.png";
 import { BsFillPersonFill } from "react-icons/bs";
 import { useTranslations } from "next-intl";
+
 const About = () => {
   const t = useTranslations("about");
 

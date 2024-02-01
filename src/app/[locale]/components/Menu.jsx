@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { BsList, BsXLg } from "react-icons/bs";
 import { pages } from "@/constants/pages";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import Image from "next/image";
 import Cube from "@/../public/cube.svg";
 
