@@ -14,7 +14,7 @@ const Menu = () => {
   if (!open) {
     return (
       <button
-        aria-label="Close Menu"
+        aria-label="Open Menu"
         className="flex sm:hidden text-2xl"
         onClick={() => toggleSide()}
       >
