@@ -6,10 +6,8 @@ import {
   Contact,
   Research,
 } from "./components";
-import { useTranslations } from "next-intl";
 
 export default function Home() {
-  const t = useTranslations("Index");
   return (
     <main className="flex flex-col">
       <Hero />
