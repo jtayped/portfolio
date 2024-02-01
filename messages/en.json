@@ -8,7 +8,7 @@
   "about": {
     "title": "About Me",
     "description": "From building my first computer at 13 to thriving in the First Lego League and venturing into web development, my journey is a testament to adaptability and continuous learning. Today, as a passionate web developer, I invite you to collaborate and turn your digital dreams into reality. Let's make it happen together!",
-    "button": "Read more"
+    "button": "My Story"
   },
   "portfolio": {
     "title": "Portfolio",
@@ -18,7 +18,7 @@
   "researchProject": {
     "title": "Check out my Research Project!",
     "description": "Have a look at my research project, 'SEO Practices to Improve Rankings in SERPs', delving into advanced SEO strategies using React JS and Tailwind CSS. From overcoming obstacles to transformative results.",
-    "button": "Learn more",
+    "button": "Read my project",
     "tag": "NEW PROJECT"
   },
   "contact": {

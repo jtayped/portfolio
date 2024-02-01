@@ -8,7 +8,7 @@
   "about": {
     "title": "Sobre mí",
     "description": "Desde construir mi primera computadora a los 13 años hasta participar en la First Lego League y aventurarme en el desarrollo web, mi trayectoria es un testimonio de adaptabilidad y aprendizaje continuo. Hoy, como desarrollador web, te invito a colaborar y convertir tus sueños digitales en realidad. ¡Hagámoslo juntos!",
-    "button": "Leer más"
+    "button": "Mi Historia"
   },
   "portfolio": {
     "title": "Portafolio",
@@ -18,7 +18,7 @@
   "researchProject": {
     "title": "¡Echa un vistazo a mi Proyecto de Investigación!",
     "description": "Observa mi proyecto de investigación, 'SEO Practices to improve rankings in SERPs', explorando estrategias avanzadas de SEO utilizando React JS y Tailwind CSS. Desde superar obstáculos hasta resultados transformadores.",
-    "button": "Saber más",
+    "button": "Lee mi proyecto",
     "tag": "NUEVO PROYECTO"
   },
   "contact": {
