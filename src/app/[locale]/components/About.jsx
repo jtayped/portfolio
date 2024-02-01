@@ -25,7 +25,7 @@ const About = () => {
           </div>
           <Image
             src={Me}
-            width={500}
+            width={300}
             alt="Joel Taylor"
             className="sm:w-[300px]"
           />
