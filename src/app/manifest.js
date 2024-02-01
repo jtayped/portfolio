@@ -2,23 +2,39 @@ export default function manifest() {
   return {
     name: "Joel Taylor | Front-end Developer",
     short_name: "Joel Taylor",
-    "start-url": "https://joeltaylor.business",
+    description:
+      "Hi! I'm Joel Taylor, a passionate front-end developer dedicated to crafting innovative web solutions.",
+    "start-url": "https://yellow-concept.vercel.app",
     icons: [
       {
-        src: "/android-chrome-192x192.png",
-        sizes: "192x192",
+        src: "metadata/android-chrome-196x196.png",
+        sizes: "196x196",
         type: "image/png",
       },
       {
-        src: "/android-chrome-512x512.png",
+        src: "metadata/android-chrome-512x512.png",
         sizes: "512x512",
         type: "image/png",
       },
       {
-        src: "/maskable_icon_x192.png",
+        src: "metadata/maskable_icon_x196.png",
         sizes: "196x196",
         type: "image/png",
         purpose: "maskable",
+      },
+    ],
+    screenshots: [
+      {
+        src: "metadata/screenshots/wide.png",
+        sizes: "640x320",
+        type: "image/png",
+        form_factor: "wide",
+      },
+      {
+        src: "metadata/screenshots/narrow.png",
+        sizes: "390x800",
+        type: "image/png",
+        form_factor: "narrow",
       },
     ],
     theme_color: "#000",

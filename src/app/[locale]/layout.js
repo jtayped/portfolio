@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Joel Taylor | Web Developer",
+  title: "Joel Taylor | Front-end Developer",
   description:
     "Hi! I'm Joel Taylor, a passionate front-end developer dedicated to crafting innovative web solutions.",
   keywords: [
