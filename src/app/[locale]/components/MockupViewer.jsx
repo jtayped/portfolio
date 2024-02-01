@@ -39,6 +39,7 @@ const ImageComponent = ({ piece }) => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.1 }}
             href={piece.href}
+            aria-label={`Visit the ${piece.name} website`}
             className="bg-yellow border border-black p-2 rounded"
           >
             <LuLink2 />
@@ -59,6 +60,7 @@ const Dots = ({ imgIndex, setImgIndex }) => {
           className={`h-1.5 w-10 rounded-full duration-100 transition-colors ${
             i === imgIndex ? "bg-black" : "bg-black/25 hover:bg-black/40"
           }`}
+          aria-label={`View the ${work[imgIndex].name} website preview`}
         />
       ))}
     </div>

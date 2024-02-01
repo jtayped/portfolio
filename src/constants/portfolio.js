@@ -11,7 +11,7 @@ export const work = [
   },
   {
     name: "Old Portfolio",
-    image: "/portfolio/OldPortfolio.png",
+    image: "/portfolio/OldPortfolio.webp",
     href: "joeltaylor.business",
   },
   {
