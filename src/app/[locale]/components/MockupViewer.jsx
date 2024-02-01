@@ -3,30 +3,57 @@
 import React, { useState, useEffect } from "react";
 import { work } from "@/constants/portfolio";
 import { motion, useMotionValue, useMotionValueEvent } from "framer-motion";
+import { LuLink2 } from "react-icons/lu";
 
 const DRAG_BUFFER = 25;
 const AUTO_DELAY = 5000;
 
-const Images = ({ imgIndex }) => {
+const Image = ({ piece }) => {
+  const [clicked, setClicked] = useState(false);
+
+  useEffect(() => {
+    const intervalRef = setInterval(() => {
+      setClicked(false);
+    }, AUTO_DELAY);
+
+    return () => clearInterval(intervalRef);
+  }, []);
+
+  return (
+    <motion.div
+      style={{ "--image-url": `url(${piece.image})` }}
+      className="bg-[image:var(--image-url)] bg-cover h-[130px] w-[225px] shrink-0 bg-neutral-900"
+      transition={{
+        type: "spring",
+        mass: 3,
+        stiffness: 400,
+        damping: 50,
+      }}
+      draggable="false"
+      onClick={() => setClicked(true)}
+    >
+      {clicked ? (
+        <div className="w-full h-full flex items-center justify-center">
+          <motion.a
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.1 }}
+            href={piece.href}
+            className="bg-yellow border border-black p-2 rounded"
+          >
+            <LuLink2 />
+          </motion.a>
+        </div>
+      ) : null}
+    </motion.div>
+  );
+};
+
+const Images = () => {
   return (
     <>
       {work.map((piece, i) => (
-        <motion.a
-          key={i}
-          style={{ "--image-url": `url(${piece.image})` }}
-          className="bg-[image:var(--image-url)] bg-cover h-[130px] w-[225px] shrink-0 bg-neutral-900"
-          animate={{
-            scale: imgIndex === i ? 1 : 0.9,
-          }}
-          transition={{
-            type: "spring",
-            mass: 3,
-            stiffness: 400,
-            damping: 50,
-          }}
-          href={piece.href}
-          draggable="false"
-        />
+        <Image key={i} piece={piece} />
       ))}
     </>
   );
@@ -35,7 +62,7 @@ const Images = ({ imgIndex }) => {
 const Dots = ({ imgIndex, setImgIndex }) => {
   return (
     <div className="mt-3 flex items-center w-full justify-center gap-2">
-      {work.map((img, i) => (
+      {work.map((_, i) => (
         <button
           key={i}
           onClick={() => setImgIndex(i)}
@@ -111,7 +138,7 @@ const MockupViewer = () => {
               onDragEnd={onDragEnd}
               className="flex items-center h-full cursor-grab active:cursor-grabbing"
             >
-              <Images imgIndex={imgIndex} />
+              <Images />
             </motion.div>
           </div>
         </div>
