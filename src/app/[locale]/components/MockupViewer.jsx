@@ -8,7 +8,7 @@ import { LuLink2 } from "react-icons/lu";
 const DRAG_BUFFER = 25;
 const AUTO_DELAY = 5000;
 
-const Image = ({ piece }) => {
+const ImageComponent = ({ piece }) => {
   const [clicked, setClicked] = useState(false);
 
   useEffect(() => {
@@ -109,7 +109,7 @@ const MockupViewer = () => {
     }, AUTO_DELAY);
 
     return () => clearInterval(intervalRef);
-  }, []);
+  }, [dragXProgress]);
 
   return (
     <div className="flex flex-col">
@@ -129,7 +129,7 @@ const MockupViewer = () => {
               className="flex items-center h-full cursor-grab active:cursor-grabbing"
             >
               {work.map((piece, i) => (
-                <Image key={i} piece={piece} />
+                <ImageComponent key={i} piece={piece} />
               ))}
             </motion.div>
           </div>

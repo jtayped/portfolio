@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Posts, Search } from "./components";
 import PostsData from "./posts";
 
-const page = () => {
+const Page = () => {
   const [posts, setPosts] = useState(PostsData.posts);
   const [query, setQuery] = useState("");
 
@@ -45,4 +45,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

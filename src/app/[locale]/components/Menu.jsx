@@ -36,6 +36,7 @@ const Menu = () => {
             src={Cube}
             height={250}
             className="bg-yellow rounded-lg"
+            alt="Cube casting a shadow"
           ></Image>
           <nav className="flex flex-col gap-2 text-center text-lg uppercase w-full">
             {pages.map((page, i) => (
