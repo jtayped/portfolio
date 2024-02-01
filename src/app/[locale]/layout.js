@@ -23,6 +23,10 @@ export const metadata = {
   ],
 };
 
+export const viewport = {
+  themeColor: "#000",
+};
+
 export default function RootLayout({ children, params }) {
   const locale = useLocale();
 
