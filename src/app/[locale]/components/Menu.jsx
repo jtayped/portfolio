@@ -13,7 +13,11 @@ const Menu = () => {
   }
   if (!open) {
     return (
-      <button className="flex sm:hidden text-2xl" onClick={() => toggleSide()}>
+      <button
+        aria-label="Close Menu"
+        className="flex sm:hidden text-2xl"
+        onClick={() => toggleSide()}
+      >
         <BsList />
       </button>
     );
@@ -26,7 +30,7 @@ const Menu = () => {
           </Link>
           <button
             className="flex sm:hidden text-2xl"
-            aria-label="Menu"
+            aria-label="Close Menu"
             onClick={() => toggleSide()}
           >
             <BsXLg />
