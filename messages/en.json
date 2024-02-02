@@ -68,6 +68,28 @@
       "sendBtn": "Send"
     }
   },
+  "Header": {
+    "about": {
+      "name": "About",
+      "path": "/about",
+      "accent": ""
+    },
+    "portfolio": {
+      "name": "Portfolio",
+      "path": "/#portfolio",
+      "accent": ""
+    },
+    "blog": {
+      "name": "Blog",
+      "path": "/blog",
+      "accent": ""
+    },
+    "contact": {
+      "name": "Contact",
+      "path": "/#contact",
+      "accent": "true"
+    }
+  },
   "Blog": {
     "hero": {
       "title": "Check out my blog!",
