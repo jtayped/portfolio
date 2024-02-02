@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { Link } from "@/navigation";
 import Cube from "@/../public/cube.svg";
-import { BsMouse, BsChevronDown } from "react-icons/bs";
+import { BsMouse, BsChevronDown, BsArrowRight } from "react-icons/bs";
+import { FaArrowRight } from "react-icons/fa6";
 import { useTranslations } from "next-intl";
 
 const Hero = () => {
@@ -16,9 +17,10 @@ const Hero = () => {
           <div className="flex gap-2 mt-4 text-sm md:text-md">
             <Link
               href="/#contact"
-              className="bg-black border border-black hover:bg-black/95 shadow hover:shadow-lg transition-all text-white px-3 py-1 rounded-sm"
+              className="bg-black border border-black hover:bg-black/95 shadow hover:shadow-lg transition-all text-white px-3 py-1 rounded-sm flex items-center gap-2"
             >
               {t("accentBtn")}
+              <FaArrowRight />
             </Link>
             <Link
               href="/#portfolio"

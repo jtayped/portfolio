@@ -19,7 +19,7 @@ const Contact = () => {
           <div className="flex gap-1 mt-2">
             <Link
               href="mailto:jtayped@gmail.com"
-              className="px-3 py-1 bg-black hover:bg-black/90 transition-colors text-yellow rounded flex items-center gap-2 text-sm"
+              className="px-3 py-1 bg-black hover:bg-black/90 transition-colors text-white rounded flex items-center gap-2 text-sm"
             >
               <MdAlternateEmail />
               {t("accentBtn")}
