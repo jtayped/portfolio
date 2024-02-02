@@ -35,7 +35,7 @@ const Page = () => {
               tenetur dolorum perferendis quo possimus!
             </p>
           </div>
-          <div className="flex flex-col gap-10 mt-10">
+          <div className="flex flex-col gap-6 mt-10">
             <Search setQuery={setQuery} />
             <Posts posts={posts} />
           </div>
