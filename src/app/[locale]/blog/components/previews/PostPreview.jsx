@@ -14,7 +14,7 @@ const PostPreview = ({ post }) => {
             width={300}
             height={200}
             alt="Post cover"
-            className="object-cover w-full h-[150px]"
+            className="object-cover w-full max-h-[200px]"
           ></Image>
         </Link>
         <div className="px-4 pt-2 mt-1">
