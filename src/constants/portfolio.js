@@ -5,6 +5,11 @@ export const work = [
     href: "https://logitech-mouse.vercel.app/",
   },
   {
+    name: "Olympia Festival",
+    image: "/portfolio/Olympia.webp",
+    href: "https://olympiafestival.vercel.app/",
+  },
+  {
     name: "Bitcoin",
     image: "/portfolio/Bitcoin.webp",
     href: "https://bitcoin-website-zeta.vercel.app/",
