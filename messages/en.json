@@ -96,5 +96,90 @@
       "description": "Welcome to my portfolio blog! Let's explore cool projects and the latest in tech and SEO. Jump into the mix of creativity and the ever-changing world of SEO and tech, finding new ideas in every post.",
       "button": "Visit my portfolio"
     }
+  },
+  "About": {
+    "hero": {
+      "title": "About Me",
+      "description": "I'm Joel Taylor, a 17-year-old from Catalonia, Spain, studying a Baccalaureate with a passion for Computer Science. Fluent in Spanish, Catalan, and English, I'm driven by curiosity and immersed in coding."
+    },
+    "skills": {
+      "title": "My Skills",
+      "description": "Proficient in HTML/CSS, Python, SEO, and skilled with Tailwind CSS, React JS, JavaScript, and Java. My journey, from building my first computer to mastering diverse languages, reflects a commitment to continuous learning and adaptability.",
+      "button": "GitHub"
+    },
+    "fll": {
+      "title": "First Lego League",
+      "description": "The First Lego League has been a rewarding journey, fostering STEM learning and teamwork. As a three-time finalist in the top 50 teams in Spain, the experience goes beyond competition—it's about hands-on exploration and personal growth. Joining this community has been a valuable part of my journey, and I invite others to explore its possibilities.",
+      "button": "Learn more"
+    },
+    "myStory": {
+      "title": "My Story",
+      "events": {
+        "firstComputer": {
+          "name": "First Computer Build",
+          "year": "December 2019",
+          "age": "13",
+          "image": "/timeline/first-computer.jpg",
+          "description": "At the age of 13, I eagerly took on the challenge of assembling my first computer after spending an entire year learning from online resources. This hands-on experience not only marked a significant milestone in my journey but also fueled a deep-seated curiosity. "
+        },
+        "fllTenerife": {
+          "name": "First Lego League (Tenerife)",
+          "year": "March 2019",
+          "age": "13",
+          "image": "/timeline/fll-tenerife-2019.jpg",
+          "description": "In my first year competing in the First Lego League, the 'Epic Lego Bulls' team from my school clinched a spot in the finals, a major feat in a competition hosting the top 50 teams in Spain. This breakthrough planted a seed of confidence, inspiring us for future victories. As a result, we headed to Tenerife, where we presented our project and battled it out on the tables with our robot—a pivotal moment that set the stage for continued success in competitive robotics."
+        },
+        "covid": {
+          "name": "COVID-19",
+          "year": "March 2020",
+          "age": "14",
+          "image": "",
+          "description": "As the COVID-19 pandemic ushered in online classes and confinement, I found a silver lining in more time on computers. This period became crucial for my development as a programmer, offering an opportunity to delve deeper into learning and explore new skills."
+        },
+        "startPython": {
+          "name": "Start of Programming Journey (Python)",
+          "year": "June 2020",
+          "age": "14",
+          "image": "",
+          "description": "Amidst confinement, I embarked on my Python development journey, dedicating hours to tutorials and documentation. Discovering pygame—an open-source library for game development—proved to be a game-changer, amplifying my learning with its limitless possibilities."
+        },
+        "fllTenerifeOnline": {
+          "name": "First Lego League (Tenerife Online)",
+          "year": "June 2021",
+          "age": "15",
+          "image": "/timeline/fll-tenerife-2021.png",
+          "description": "For the second time, our team secured a spot in the finals in Tenerife, but with COVID restrictions, the event shifted to an online format. Undeterred, we faced the challenge, participating remotely alongside 50 of the best teams in Spain. Taking on a new role as the lead programmer for the robot, utilizing Lego Mindstorms."
+        },
+        "fllTorremolinos": {
+          "name": "First Lego League (Torremolinos)",
+          "year": "April 2022",
+          "age": "16",
+          "image": "/timeline/fll-torremolinos-2022.jpg",
+          "description": "In the concluding chapter of my four-year journey in the First Lego League, this final season held immense emotional value. Determined to secure qualification, as the lead programmer I adopted an innovative strategy, shifting from Lego Mindstorms to Python programming. Despite the complexity, the move provided us with a competitive edge. The announcement of our qualification marked a triumphant moment, earning us a spot in the finals in Torremolinos, Málaga, and closing the FLL chapter on a high note."
+        },
+        "startWebDev": {
+          "name": "Web Development Era",
+          "year": "December 2022",
+          "age": "17",
+          "image": "",
+          "description": "To expand my programming repertoire beyond Python, I ventured into web development. Starting with HTML and CSS, I quickly progressed to React JS and later added Tailwind CSS to my toolkit. This strategic approach, reminiscent of my Python learning journey, marked the beginning of my foray into the dynamic world of web development."
+        },
+        "startFiverr": {
+          "name": "Initiation Into Fiverr",
+          "year": "February 2023",
+          "age": "17",
+          "image": "",
+          "description": "Recognizing the potential to monetize my skills, I ventured into freelancing on Fiverr. Observing a trend where university students were grappling with exercises involving the pygame module, I saw an opportunity. Leveraging my expertise, I decided to offer my services on Fiverr to assist students with their homework and major projects."
+        }
+      },
+      "today": {
+        "title": "Today",
+        "description": {
+          "p1": "Today, I stand as a passionate web developer, ready to turn your digital dreams into reality. From building my first computer at 13 to thriving as a freelancer on Fiverr, my journey embodies a commitment to innovation and continuous learning.",
+          "p2": "Let's collaborate, innovate, and bring your digital aspirations to life. Today is not just another day; it's an opportunity to create something extraordinary. Let's make it happen together."
+        },
+        "button": "TAKE ACTION"
+      }
+    }
   }
 }
