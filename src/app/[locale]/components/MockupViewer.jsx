@@ -39,7 +39,7 @@ const ImageComponent = ({ piece }) => {
           transition={{ duration: 0.1 }}
           href={piece.href}
           aria-label={`Visit the ${piece.name} website`}
-          className="absolute bottom-3 right-3 bg-yellow p-2.5 rounded-full shadow-lg text-sm md:text-lg transition-colors hover:bg-white/90"
+          className="absolute bottom-3 right-3 bg-yellow p-2.5 rounded-lg shadow-lg text-sm md:text-lg transition-colors hover:bg-white/90"
         >
           <LuExternalLink />
         </a>
