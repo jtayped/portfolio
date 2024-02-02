@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="w-full flex flex-col sm:max-w-[600px]">
           <Link
             href="https://old.joeltaylor.business/"
-            className="group bg-white/40 hover:bg-white/60 px-2 pr-3 py-1 sm:flex items-center gap-2 rounded border border-black/5 hidden text-sm transition-colors"
+            className="group bg-white/40 hover:bg-white/60 text-xs sm:text-sm px-2 pr-3 py-1 w-fit flex items-center gap-2 rounded border border-black/5 transition-colors"
           >
             {t("oldPortfolio")}
             <BsArrowRight className="group-hover:translate-x-0.5 transition-transform" />
