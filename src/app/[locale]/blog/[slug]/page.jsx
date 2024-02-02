@@ -33,6 +33,17 @@ const Page = ({ params }) => {
         const content = await response.text();
         const htmlContent = await parseMDX(content);
         setPost({ ...matchingPost, htmlContent });
+
+        // Dynamically update metadata for the current post
+        document.title = matchingPost.title; // Update the title
+
+        // Update meta tags
+        const descriptionMetaTag = document.querySelector(
+          'meta[name="description"]'
+        );
+        descriptionMetaTag.content = matchingPost.description;
+        const keywords = document.querySelector('meta[name="keywords"]');
+        keywords.content = matchingPost.keywords;
       } catch (error) {
         console.error("Error fetching or processing MDX file:", error);
         notFound();
