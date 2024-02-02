@@ -1,32 +1,30 @@
 export const skills = [
   {
-    name: "HTML/CSS",
+    name: "Tailwind CSS",
     percentage: "100",
   },
   {
     name: "Python",
-    percentage: "100",
+    percentage: "90",
+  },
+  {
+    name: "HTML/CSS",
+    percentage: "85",
   },
   {
     name: "SEO",
-    percentage: "95",
-  },
-  {
-    name: "Tailwind CSS",
-    percentage: "90",
-  },
-
-  {
-    name: "Javascript",
-    percentage: "90",
+    percentage: "80",
   },
   {
     name: "React JS",
-    percentage: "85",
+    percentage: "80",
   },
-
   {
-    name: "Java",
-    percentage: "50",
+    name: "Javascript",
+    percentage: "75",
+  },
+  {
+    name: "Firebase",
+    percentage: "70",
   },
 ];
