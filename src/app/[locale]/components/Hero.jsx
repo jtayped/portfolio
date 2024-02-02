@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import {Link} from "@/navigation";
+import { Link } from "@/navigation";
 import Cube from "@/../public/cube.svg";
 import { BsMouse, BsChevronDown } from "react-icons/bs";
 import { useTranslations } from "next-intl";
 
 const Hero = () => {
-  const t = useTranslations("Index");
+  const t = useTranslations("Index.hero");
   return (
     <div className="relative h-screen flex justify-start sm:justify-center items-center text-black">
       <div className="max-w-[1500px] flex items-center px-8 justify-center">

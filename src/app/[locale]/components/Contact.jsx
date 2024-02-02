@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import ContactForm from "./ContactForm";
 
 const Contact = () => {
-  const t = useTranslations("contact");
+  const t = useTranslations("Index.contact");
   return (
     <div
       className="text-black px-8 py-10 flex items-center justify-center"

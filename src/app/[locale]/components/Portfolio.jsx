@@ -5,7 +5,7 @@ import { MockupViewer } from ".";
 import { useTranslations } from "next-intl";
 
 const Portfolio = () => {
-  const t = useTranslations("portfolio");
+  const t = useTranslations("Index.portfolio");
 
   return (
     <div className="relative text-black px-8 py-10 flex items-center justify-center">

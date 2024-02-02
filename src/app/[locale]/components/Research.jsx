@@ -6,7 +6,7 @@ import SEOImage from "@/../public/research/seo.jpg";
 import { useTranslations } from "next-intl";
 
 const Research = () => {
-  const t = useTranslations("researchProject");
+  const t = useTranslations("Index.researchProject");
 
   return (
     <div className="text-black px-8 py-10 flex items-center justify-center">

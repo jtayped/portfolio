@@ -6,7 +6,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { useTranslations } from "next-intl";
 
 const About = () => {
-  const t = useTranslations("about");
+  const t = useTranslations("Index.about");
 
   return (
     <div className="text-black px-8 py-10 flex items-center justify-center">

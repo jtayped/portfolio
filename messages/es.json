@@ -1,36 +1,75 @@
 {
   "Index": {
-    "title": "¡Hola! Soy Joel Taylor",
-    "description": "un joven y apasionado desarrollador front-end que crea soluciones web innovadoras y precisas. Únete a mí en un viaje de aprendizaje continuo y creemos algo extraordinario juntos.",
-    "accentBtn": "¡Contáctame!",
-    "secondaryBtn": "Ver mi trabajo"
+    "hero": {
+      "title": "¡Hola! Soy Joel Taylor",
+      "description": "un joven y apasionado desarrollador front-end que crea soluciones web innovadoras y precisas. Únete a mí en un viaje de aprendizaje continuo y creemos algo extraordinario juntos.",
+      "accentBtn": "¡Contáctame!",
+      "secondaryBtn": "Ver mi trabajo"
+    },
+    "about": {
+      "title": "Sobre mí",
+      "description": "Desde construir mi primera computadora a los 13 años hasta participar en la First Lego League y aventurarme en el desarrollo web, mi trayectoria es un testimonio de adaptabilidad y aprendizaje continuo. Hoy, como desarrollador web, te invito a colaborar y convertir tus sueños digitales en realidad. ¡Hagámoslo juntos!",
+      "button": "Mi Historia"
+    },
+    "portfolio": {
+      "title": "Portafolio",
+      "description": "Descubre mi portafolio que muestra una variedad de proyectos impactantes, demostrando experiencia en desarrollo web y más allá. Para ver el código en detalle, visita mi GitHub.",
+      "button": "GitHub"
+    },
+    "researchProject": {
+      "title": "¡Echa un vistazo a mi Proyecto de Investigación!",
+      "description": "Observa mi proyecto de investigación, 'SEO Practices to improve rankings in SERPs', explorando estrategias avanzadas de SEO utilizando React JS y Tailwind CSS. Desde superar obstáculos hasta resultados transformadores.",
+      "button": "Lee mi proyecto",
+      "tag": "NUEVO PROYECTO"
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "testimonials": {
+        "Juan": {
+          "title": "¡Un gran desarrollador!",
+          "text": "Un gran desarrollador que te ayuda a describir lo que se necesita, pero también entiende cómo resolver el problema que tengo delante muy atento, cumplió mis expectativas al 110%, excelente trato, me ayudo en todo, para el próximo proyecto lo volveré a contar con el y su conocimiento",
+          "stars": 5,
+          "translated": false,
+          "image": "/testimonials/Juan.webp",
+          "name": "Juan Antonio",
+          "from": "De Fiverr"
+        },
+        "Vithanco": {
+          "title": "Alquimista del diseño",
+          "text": "Recientemente tuve el placer de trabajar con Joel, un joven y talentoso profesional de Fiverr. La tarea que tenía era el estilo CSS, un nicho complejo en el que Joel navega con considerable delicadeza. Desde el principio, la experiencia de Joel brilló intensamente. No sólo entendió los requisitos técnicos de mi proyecto, sino que también se tomó el tiempo para comprender la visión estética que sustentaba mi solicitud. Las habilidades de Joel en estilo CSS son indudablemente vastas, pero fue su compromiso para realizar mi proyecto lo que realmente lo distinguió.",
+          "stars": 5,
+          "translated": true,
+          "image": "/testimonials/Vithanco.webp",
+          "name": "Vithanco",
+          "from": "De Fiverr"
+        },
+        "Walter": {
+          "title": "Profesional y eficiente",
+          "text": "Joel es un verdadero profesional cuando se trata de desarrollo web. Pudo crear un sitio web hermoso y funcional para mí de una manera muy eficiente. Su atención al detalle y la comunicación durante todo el proceso fue excepcional.",
+          "stars": 5,
+          "translated": true,
+          "image": "/testimonials/Walter.webp",
+          "name": "Walter King",
+          "from": "Otro"
+        }
+      }
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "No dudes en ponerte en contacto. Ya sea que compartas una pasión por la programación o que tu empresa busque colaboración, estoy emocionado por conectar contigo. Tu participación es crucial para dar forma a nuestra experiencia juntos.",
+      "accentBtn": "Correo electrónico",
+      "secondaryBtn": "Instagram",
+      "name": "Nombre",
+      "lastName": "Apellido",
+      "email": "Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "sendBtn": "Enviar"
+    }
   },
-  "about": {
-    "title": "Sobre mí",
-    "description": "Desde construir mi primera computadora a los 13 años hasta participar en la First Lego League y aventurarme en el desarrollo web, mi trayectoria es un testimonio de adaptabilidad y aprendizaje continuo. Hoy, como desarrollador web, te invito a colaborar y convertir tus sueños digitales en realidad. ¡Hagámoslo juntos!",
-    "button": "Mi Historia"
-  },
-  "portfolio": {
-    "title": "Portafolio",
-    "description": "Descubre mi portafolio que muestra una variedad de proyectos impactantes, demostrando experiencia en desarrollo web y más allá. Para ver el código en detalle, visita mi GitHub.",
-    "button": "GitHub"
-  },
-  "researchProject": {
-    "title": "¡Echa un vistazo a mi Proyecto de Investigación!",
-    "description": "Observa mi proyecto de investigación, 'SEO Practices to improve rankings in SERPs', explorando estrategias avanzadas de SEO utilizando React JS y Tailwind CSS. Desde superar obstáculos hasta resultados transformadores.",
-    "button": "Lee mi proyecto",
-    "tag": "NUEVO PROYECTO"
-  },
-  "contact": {
-    "title": "Contacto",
-    "description": "No dudes en ponerte en contacto. Ya sea que compartas una pasión por la programación o que tu empresa busque colaboración, estoy emocionado por conectar contigo. Tu participación es crucial para dar forma a nuestra experiencia juntos.",
-    "accentBtn": "Correo electrónico",
-    "secondaryBtn": "Instagram",
-    "name": "Nombre",
-    "lastName": "Apellido",
-    "email": "Email",
-    "subject": "Asunto",
-    "message": "Mensaje",
-    "sendBtn": "Enviar"
+  "About": {
+    "hero": {
+      "title": "Check out my blog!"
+    }
   }
 }
