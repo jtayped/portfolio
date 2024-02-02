@@ -16,14 +16,14 @@ const Hero = () => {
           <p className="text-sm md:text-lg">{t("description")}</p>
           <div className="flex gap-2 mt-4 text-sm sm:text-md">
             <Link
-              href="/"
+              href="/#contact"
               className="bg-black py-2 px-3 text-white flex items-center gap-3 rounded shadow-lg hover:bg-black/90 transition-colors"
             >
               {t("accentBtn")}
               <FaArrowRight />
             </Link>
             <Link
-              href="/"
+              href="/#portfolio"
               className="border border-black py-2 px-3 text-black rounded hover:bg-black/5"
             >
               {t("secondaryBtn")}
