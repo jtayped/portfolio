@@ -10,7 +10,7 @@ const Skills = () => {
   return (
     <div className="text-black px-8 py-10 flex items-center justify-center">
       <div className="w-[900px] flex flex-col gap-8 sm:gap-4 sm:grid sm:grid-cols-2">
-        <div className="max-w-[340px]">
+        <div className="max-w-[400px]">
           <h2 className="text-3xl font-bold">{t("title")}</h2>
           <p>{t("description")}</p>
           <Link
