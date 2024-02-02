@@ -2,21 +2,21 @@ export const work = [
   {
     name: "Logitech M170",
     image: "/portfolio/Logitech.webp",
-    href: "/logitech-mouse",
+    href: "https://logitech-mouse.vercel.app/",
   },
   {
     name: "Bitcoin",
     image: "/portfolio/Bitcoin.webp",
-    href: "/bitcoin",
+    href: "https://bitcoin-website-zeta.vercel.app/",
   },
   {
     name: "Old Portfolio",
     image: "/portfolio/OldPortfolio.webp",
-    href: "joeltaylor.business",
+    href: "https://old.joeltaylor.business",
   },
   {
     name: "GPT Articles",
     image: "/portfolio/GPTArticles.webp",
-    href: "/gpt-articles",
+    href: "https://gpt-articles-tan.vercel.app/",
   },
 ];
