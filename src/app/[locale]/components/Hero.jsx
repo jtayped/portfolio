@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className="relative h-screen flex justify-start sm:justify-center items-center text-black">
       <div className="max-w-[1500px] flex items-center px-8 justify-center">
-        <div className="w-full flex flex-col items-center sm:items-start text-center sm:text-left sm:max-w-[600px]">
+        <div className="w-full flex flex-col sm:max-w-[600px]">
           <Link
             href="https://old.joeltaylor.business/"
             className="group bg-white/40 hover:bg-white/60 px-2 pr-3 py-1 sm:flex items-center gap-2 rounded border border-black/5 hidden text-sm transition-colors"
