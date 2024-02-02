@@ -9,16 +9,6 @@ const DRAG_BUFFER = 25;
 const AUTO_DELAY = 5000;
 
 const ImageComponent = ({ piece }) => {
-  const [clicked, setClicked] = useState(false);
-
-  useEffect(() => {
-    const intervalRef = setInterval(() => {
-      setClicked(false);
-    }, AUTO_DELAY);
-
-    return () => clearInterval(intervalRef);
-  }, []);
-
   return (
     <motion.div
       style={{ "--image-url": `url(${piece.image})` }}
@@ -39,7 +29,7 @@ const ImageComponent = ({ piece }) => {
           transition={{ duration: 0.1 }}
           href={piece.href}
           aria-label={`Visit the ${piece.name} website`}
-          className="absolute bottom-3 right-3 bg-yellow p-2.5 rounded-lg shadow-lg text-sm md:text-lg transition-colors hover:bg-white/90"
+          className="absolute bottom-3 right-3 bg-yellow/80 backdrop-blur-sm p-2.5 rounded-lg shadow-lg text-sm md:text-lg transition-colors hover:bg-yellow/90"
         >
           <LuExternalLink />
         </a>
