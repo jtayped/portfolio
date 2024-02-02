@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { work } from "@/constants/portfolio";
 import { motion, useMotionValue, useMotionValueEvent } from "framer-motion";
-import { LuLink2 } from "react-icons/lu";
+import { LuExternalLink } from "react-icons/lu";
 
 const DRAG_BUFFER = 25;
 const AUTO_DELAY = 5000;
@@ -32,20 +32,18 @@ const ImageComponent = ({ piece }) => {
       draggable="false"
       onClick={() => setClicked(true)}
     >
-      {clicked ? (
-        <div className="w-full h-full flex items-center justify-center">
-          <motion.a
-            initial={{ y: 10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.1 }}
-            href={piece.href}
-            aria-label={`Visit the ${piece.name} website`}
-            className="bg-yellow border border-black p-2 rounded"
-          >
-            <LuLink2 />
-          </motion.a>
-        </div>
-      ) : null}
+      <div className="relative w-full h-full">
+        <a
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.1 }}
+          href={piece.href}
+          aria-label={`Visit the ${piece.name} website`}
+          className="absolute bottom-3 right-3 bg-white p-2.5 rounded-full shadow-lg text-sm md:text-lg transition-colors hover:bg-white/90"
+        >
+          <LuExternalLink />
+        </a>
+      </div>
     </motion.div>
   );
 };
