@@ -105,7 +105,7 @@ const MockupViewer = () => {
       <div style={{ overflow: "hidden" }}>
         <div className="relative mx-auto overflow-hidden border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[149px] w-[241px]">
           <div className="rounded-lg h-[130px] bg-black/50">
-            <motion.div
+            <motion.nav
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
               style={{ x: dragX }}
@@ -120,7 +120,7 @@ const MockupViewer = () => {
               {work.map((piece, i) => (
                 <ImageComponent key={i} piece={piece} />
               ))}
-            </motion.div>
+            </motion.nav>
           </div>
         </div>
         <div className="relative mx-auto bg-gray-900 rounded-b-xl rounded-t-sm h-[17px] w-[261px]">
