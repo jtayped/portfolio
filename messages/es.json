@@ -99,18 +99,18 @@
   },
   "About": {
     "hero": {
-      "title": "About Me",
-      "description": "I'm Joel Taylor, a 17-year-old from Catalonia, Spain, studying a Baccalaureate with a passion for Computer Science. Fluent in Spanish, Catalan, and English, I'm driven by curiosity and immersed in coding."
+      "title": "Acerca de Mí",
+      "description": "Soy Joel Taylor, un joven de 17 años de Cataluña, España, estudiando un Bachillerato con pasión por la Informática. Fluido en español, catalán e inglés, me impulsa la curiosidad y estoy inmerso en la programación."
     },
     "skills": {
-      "title": "My Skills",
-      "description": "Proficient in HTML/CSS, Python, SEO, and skilled with Tailwind CSS, React JS, JavaScript, and Java. My journey, from building my first computer to mastering diverse languages, reflects a commitment to continuous learning and adaptability.",
+      "title": "Mis Habilidades",
+      "description": "Competente en HTML/CSS, Python, SEO, y hábil con Tailwind CSS, React JS, JavaScript y Java. Mi trayectoria, desde construir mi primera computadora hasta dominar diversos lenguajes, refleja un compromiso con el aprendizaje continuo y la adaptabilidad.",
       "button": "GitHub"
     },
     "fll": {
       "title": "First Lego League",
-      "description": "The First Lego League has been a rewarding journey, fostering STEM learning and teamwork. As a three-time finalist in the top 50 teams in Spain, the experience goes beyond competition—it's about hands-on exploration and personal growth. Joining this community has been a valuable part of my journey, and I invite others to explore its possibilities.",
-      "button": "Learn more"
+      "description": "La First Lego League ha sido un viaje gratificante, fomentando el aprendizaje STEM y el trabajo en equipo. Como finalista en tres ocasiones entre los 50 mejores equipos de España, la experiencia va más allá de la competencia; se trata de exploración práctica y crecimiento personal. Unirse a esta comunidad ha sido una parte valiosa de mi trayecto, e invito a otros a explorar sus posibilidades.",
+      "button": "Saber más"
     },
     "myStory": {
       "title": "My Story",

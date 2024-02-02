@@ -1,8 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Me from "@/@/../../public/about/me.png";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations("About.hero");
+
   return (
     <div className="relative text-black px-8 py-10 flex items-center justify-center mt-[100px] sm:mt-[200px]">
       <div className="w-[900px] flex items-center justify-center">
@@ -12,13 +15,8 @@ const Hero = () => {
           </div>
 
           <div className="max-w-[400px] text-center sm:text-left">
-            <h1 className="text-6xl font-bold">About Me</h1>
-            <p>
-              I'm Joel Taylor, a 17-year-old from Catalonia, Spain, studying a
-              Baccalaureate with a passion for Computer Science. Fluent in
-              Spanish, Catalan, and English, I'm driven by curiosity and
-              immersed in coding.
-            </p>
+            <h1 className="text-6xl font-bold">{t("title")}</h1>
+            <p>{t("description")}</p>
           </div>
         </div>
       </div>
