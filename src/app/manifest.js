@@ -4,7 +4,7 @@ export default function manifest() {
     short_name: "Joel Taylor",
     description:
       "Hi! I'm Joel Taylor, a passionate front-end developer dedicated to crafting innovative web solutions.",
-    "start-url": "https://yellow-concept.vercel.app",
+    start_url: "/",
     icons: [
       {
         src: "metadata/android-chrome-196x196.png",
