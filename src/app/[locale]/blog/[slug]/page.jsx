@@ -52,7 +52,7 @@ const Page = ({ params }) => {
   }, [params.slug]);
 
   return (
-    <div className="relative text-black px-8 py-10 flex items-center justify-center mt-[100px]">
+    <div className="relative text-black px-8 py-10 flex items-center justify-center mt-[75px] sm:mt-[100px]">
       <main className="flex items-center justify-center">
         {post && (
           <div className="flex flex-col gap-4 max-w-prose">
@@ -61,7 +61,7 @@ const Page = ({ params }) => {
               width={900}
               height={350}
               alt="Post cover"
-              className="w-full h-[350px]"
+              className="w-full h-[200px] md:h-[350px] object-cover"
             ></Image>
             <div className="flex items-center gap-3 mt-2">
               <Link href="/about">
@@ -81,7 +81,9 @@ const Page = ({ params }) => {
               </div>
             </div>
             <article className="prose prose-zinc max-w-prose mx-auto prose-pre:bg-slate-300 prose-code:text-black prose-pre:border prose-pre:shadow">
-              <h1 className="text-5xl font-bold">{post.title}</h1>
+              <h1 className="text-4xl sm:text-5xl font-extrabold">
+                {post.title}
+              </h1>
               <div dangerouslySetInnerHTML={{ __html: post.htmlContent }} />
             </article>
           </div>
