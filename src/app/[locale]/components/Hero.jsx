@@ -12,7 +12,14 @@ const Hero = () => {
     <div className="relative h-screen flex justify-start sm:justify-center items-center text-black">
       <div className="max-w-[1500px] flex items-center px-8 justify-center">
         <div className="w-full flex flex-col items-center sm:items-start text-center sm:text-left sm:max-w-[600px]">
-          <h1 className="text-4xl md:text-6xl font-bold">{t("title")}</h1>
+          <Link
+            href="https://old.joeltaylor.business/"
+            className="bg-white/40 hover:bg-white/30 px-2 py-1 sm:flex items-center gap-2 rounded border border-black/5 hidden text-sm"
+          >
+            {t("oldPortfolio")}
+            <BsArrowRight />
+          </Link>
+          <h1 className="text-4xl md:text-6xl font-bold mt-3">{t("title")}</h1>
           <p className="text-sm md:text-lg">{t("description")}</p>
           <div className="flex gap-2 mt-4 text-sm sm:text-md">
             <Link
