@@ -14,10 +14,10 @@ const Hero = () => {
         <div className="w-full flex flex-col items-center sm:items-start text-center sm:text-left sm:max-w-[600px]">
           <Link
             href="https://old.joeltaylor.business/"
-            className="bg-white/40 hover:bg-white/30 px-2 py-1 sm:flex items-center gap-2 rounded border border-black/5 hidden text-sm"
+            className="group bg-white/40 hover:bg-white/60 px-2 pr-3 py-1 sm:flex items-center gap-2 rounded border border-black/5 hidden text-sm transition-colors"
           >
             {t("oldPortfolio")}
-            <BsArrowRight />
+            <BsArrowRight className="group-hover:translate-x-0.5 transition-transform" />
           </Link>
           <h1 className="text-4xl md:text-6xl font-bold mt-3">{t("title")}</h1>
           <p className="text-sm md:text-lg">{t("description")}</p>
