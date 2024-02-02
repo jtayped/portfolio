@@ -41,7 +41,7 @@ export default function sitemap() {
     },
   ];
 
-  // Adding blog post entries to sitemap
+  // Add blog post entries to sitemap
   BlogPosts.posts.forEach((post) => {
     const url = `https://joeltaylor.business/en/blog/${convertToUrl(post.title)}`;
     const lastModified = new Date(post.date);
