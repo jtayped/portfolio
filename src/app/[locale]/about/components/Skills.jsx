@@ -25,14 +25,14 @@ const Skills = () => {
           <ol className="grid grid-cols-2 gap-2">
             {skills.map((skill, i) => (
               <li key={i}>
-                <div className="flex flex-col bg-black text-yellow p-3 rounded">
+                <div className="flex flex-col bg-black text-white p-3 rounded">
                   <div className="flex justify-between text-sm">
                     <p>{skill.name}</p>
                     <p className="font-bold">{skill.percentage}%</p>
                   </div>
-                  <div class="w-full bg-yellow/40 rounded-full">
+                  <div class="w-full bg-white/40 rounded-full">
                     <div
-                      className="bg-yellow h-1.5 rounded-full"
+                      className="bg-white h-1.5 rounded-full"
                       style={{ width: skill.percentage + "%" }}
                     ></div>
                   </div>
