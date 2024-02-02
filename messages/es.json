@@ -68,9 +68,11 @@
       "sendBtn": "Enviar"
     }
   },
-  "About": {
+  "Blog": {
     "hero": {
-      "title": "Check out my blog!"
+      "title": "¡Explora mi blog!",
+      "description": "¡Bienvenido a mi blog de portfolio! Exploraremos proyectos interesantes y las últimas novedades en tecnología y SEO. Sumérgete en la mezcla de creatividad y en el siempre cambiante mundo de SEO y tecnología, descubriendo nuevas ideas en cada publicación.",
+      "button": "Visita mi portafolio"
     }
   }
 }

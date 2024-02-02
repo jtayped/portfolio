@@ -71,7 +71,8 @@
   "Blog": {
     "hero": {
       "title": "Check out my blog!",
-      "description": "Welcome to my portfolio blog! Let's explore cool projects and the latest in tech and SEO. Jump into the mix of creativity and the ever-changing world of SEO and tech, finding new ideas in every post."
+      "description": "Welcome to my portfolio blog! Let's explore cool projects and the latest in tech and SEO. Jump into the mix of creativity and the ever-changing world of SEO and tech, finding new ideas in every post.",
+      "button": "Visit my portfolio"
     }
   }
 }
