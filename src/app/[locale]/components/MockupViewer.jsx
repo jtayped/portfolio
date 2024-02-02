@@ -22,7 +22,7 @@ const ImageComponent = ({ piece }) => {
   return (
     <motion.div
       style={{ "--image-url": `url(${piece.image})` }}
-      className="bg-[image:var(--image-url)] bg-cover h-[130px] w-[225px] shrink-0 bg-neutral-900"
+      className="bg-[image:var(--image-url)] bg-cover bg-center h-[130px] w-[225px] shrink-0 bg-neutral-900"
       transition={{
         type: "spring",
         mass: 3,
