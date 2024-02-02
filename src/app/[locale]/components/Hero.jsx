@@ -14,17 +14,17 @@ const Hero = () => {
         <div className="w-full flex flex-col items-center sm:items-start text-center sm:text-left sm:max-w-[600px]">
           <h1 className="text-4xl md:text-6xl font-bold">{t("title")}</h1>
           <p className="text-sm md:text-lg">{t("description")}</p>
-          <div className="flex gap-2 mt-4 text-sm md:text-md">
+          <div className="flex gap-2 mt-4 text-sm sm:text-md">
             <Link
-              href="/#contact"
-              className="bg-black border border-black hover:bg-black/95 shadow hover:shadow-lg transition-all text-white px-3 py-1 rounded-sm flex items-center gap-2"
+              href="/"
+              className="bg-black py-2 px-3 text-white flex items-center gap-3 rounded shadow-lg hover:bg-black/90 transition-colors"
             >
               {t("accentBtn")}
               <FaArrowRight />
             </Link>
             <Link
-              href="/#portfolio"
-              className="border border-black px-3 py-1 rounded-sm shadow hover:bg-black/5 transition-colors"
+              href="/"
+              className="border border-black py-2 px-3 text-black rounded hover:bg-black/5"
             >
               {t("secondaryBtn")}
             </Link>

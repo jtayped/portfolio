@@ -19,7 +19,7 @@ const Portfolio = () => {
               <p className="mt-2">{t("description")}</p>
               <Link
                 href="https://github.com/jtayped"
-                className="flex gap-3 items-center px-2 py-1 rounded border border-black text-black w-fit mt-3 hover:bg-black/5 transition-colors"
+                className="flex gap-3 items-center px-3 py-2 rounded border border-black text-black w-fit mt-3 hover:bg-black/5 transition-colors"
               >
                 <BsGithub size={18} />
                 <p className="text-sm">{t("button")}</p>

@@ -17,7 +17,7 @@ const About = () => {
             <p>{t("description")}</p>
             <Link
               href="/about"
-              className="flex gap-3 items-center px-2 py-1 mt-3 w-fit rounded bg-black text-white hover:bg-black/90"
+              className="flex gap-3 items-center px-3 py-2 mt-3 w-fit rounded bg-black text-white hover:bg-black/90 shadow"
             >
               <BsFillPersonFill size={18} />
               <p className="text-sm">{t("button")}</p>
