@@ -49,13 +49,16 @@ const ContactForm = ({ name, lastName, email, subject, message, sendBtn }) => {
           autoComplete="off"
         ></textarea>
       </div>
-      <button
-        type="submit"
-        className="bg-black hover:bg-black/95 py-2 text-white text-sm rounded w-1/2 font-bold flex justify-center items-center gap-2"
-      >
-        {sendBtn}
-        <FaArrowRight />
-      </button>
+      <div className="grid sm:grid-cols-2 gap-2">
+        <div className="flex sm:hidden" />
+        <button
+          type="submit"
+          className="bg-black hover:bg-black/95 py-2 text-white text-sm rounded font-bold flex justify-center items-center gap-2"
+        >
+          {sendBtn}
+          <FaArrowRight />
+        </button>
+      </div>
     </form>
   );
 };
