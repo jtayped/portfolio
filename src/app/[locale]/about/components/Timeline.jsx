@@ -1,5 +1,4 @@
 import React from "react";
-import { events } from "@/constants/timeline";
 import Image from "next/image";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
@@ -45,12 +44,11 @@ const age =
     ? currentYear - birthYear
     : currentYear - birthYear - 1;
 
-const currentMonthYear = `${
-  months[new Date().getMonth()]
-} ${new Date().getFullYear()}`;
-
 const Timeline = () => {
   const t = useTranslations("About.myStory");
+
+  const translatedMonth = t(`months.${months[currentDate.getMonth()]}`);
+  const currentMonthYear = `${translatedMonth} ${new Date().getFullYear()}`;
   return (
     <div className="text-black px-8 py-10 flex items-center justify-center">
       <div className="w-[900px] flex flex-col items-center gap-10">

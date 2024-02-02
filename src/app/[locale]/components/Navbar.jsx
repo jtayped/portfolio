@@ -1,5 +1,4 @@
 import { Link } from "@/navigation";
-import { pages } from "@/constants/pages";
 import { Menu } from ".";
 import { useTranslations } from "next-intl";
 
