@@ -19,7 +19,7 @@ const Research = () => {
             <h2 className="text-3xl font-bold">{t("title")}</h2>
             <p>{t("description")}</p>
             <Link
-              href="/research"
+              href="/blog"
               className="flex items-center gap-2 border border-black text-black w-fit px-3 py-2 rounded mt-2 text-sm hover:bg-black/5 transition-colors"
             >
               <BsFillFileTextFill />

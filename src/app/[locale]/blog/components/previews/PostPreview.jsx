@@ -8,15 +8,24 @@ const PostPreview = ({ post }) => {
   return (
     <div className="bg-white text-black flex flex-col justify-between h-full shadow-lg">
       <div>
-        <Link href={`blog/${convertToUrl(post.title)}`}>
-          <Image
-            src={post.cover}
-            width={300}
-            height={200}
-            alt="Post cover"
-            className="object-cover w-full max-h-[200px]"
-          ></Image>
-        </Link>
+        <div className="relative">
+          {post.tag ? (
+            <p className="absolute top-0 left-0 m-4 bg-black/50 backdrop-blur text-white text-xs p-1 rounded">
+              {post.tag}
+            </p>
+          ) : null}
+
+          <Link href={`blog/${convertToUrl(post.title)}`}>
+            <Image
+              src={post.cover}
+              width={300}
+              height={200}
+              alt="Post cover"
+              className="object-cover w-full max-h-[200px]"
+            ></Image>
+          </Link>
+        </div>
+
         <div className="px-4 pt-2 mt-1">
           <div className="flex items-center gap-3">
             <Link href="/about">
