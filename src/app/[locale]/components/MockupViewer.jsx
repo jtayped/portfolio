@@ -20,7 +20,6 @@ const ImageComponent = ({ piece }) => {
         damping: 50,
       }}
       draggable="false"
-      onClick={() => setClicked(true)}
     >
       <div className="relative w-full h-full">
         <a
