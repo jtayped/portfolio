@@ -29,7 +29,7 @@
           "title": "¡Un gran desarrollador!",
           "text": "Un gran desarrollador que te ayuda a describir lo que se necesita, pero también entiende cómo resolver el problema que tengo delante muy atento, cumplió mis expectativas al 110%, excelente trato, me ayudo en todo, para el próximo proyecto lo volveré a contar con el y su conocimiento",
           "stars": 5,
-          "translated": false,
+          "translated": "",
           "image": "/testimonials/Juan.webp",
           "name": "Juan Antonio",
           "from": "De Fiverr"
@@ -38,7 +38,7 @@
           "title": "Alquimista del diseño",
           "text": "Recientemente tuve el placer de trabajar con Joel, un joven y talentoso profesional de Fiverr. La tarea que tenía era el estilo CSS, un nicho complejo en el que Joel navega con considerable delicadeza. Desde el principio, la experiencia de Joel brilló intensamente. No sólo entendió los requisitos técnicos de mi proyecto, sino que también se tomó el tiempo para comprender la visión estética que sustentaba mi solicitud. Las habilidades de Joel en estilo CSS son indudablemente vastas, pero fue su compromiso para realizar mi proyecto lo que realmente lo distinguió.",
           "stars": 5,
-          "translated": true,
+          "translated": "true",
           "image": "/testimonials/Vithanco.webp",
           "name": "Vithanco",
           "from": "De Fiverr"
@@ -47,7 +47,7 @@
           "title": "Profesional y eficiente",
           "text": "Joel es un verdadero profesional cuando se trata de desarrollo web. Pudo crear un sitio web hermoso y funcional para mí de una manera muy eficiente. Su atención al detalle y la comunicación durante todo el proceso fue excepcional.",
           "stars": 5,
-          "translated": true,
+          "translated": "true",
           "image": "/testimonials/Walter.webp",
           "name": "Walter King",
           "from": "Otro"
