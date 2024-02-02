@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { BsList, BsXLg } from "react-icons/bs";
 import { pages } from "@/constants/pages";
 import { Link } from "@/navigation";
-import Image from "next/image";
-import Cube from "@/../public/cube.svg";
+import { motion } from "framer-motion";
+import { LanguageSelector } from ".";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -28,34 +28,27 @@ const Menu = () => {
           <Link href="/" onClick={() => toggleSide()}>
             <p className="text-2xl sm:text-4xl font-extrabold">TAYLOR</p>
           </Link>
-          <button
+          <motion.button
             className="flex sm:hidden text-2xl"
             aria-label="Close Menu"
             onClick={() => toggleSide()}
+            initial={{ rotate: 90 }}
+            animate={{ rotate: 0 }}
           >
             <BsXLg />
-          </button>
+          </motion.button>
         </div>
-        <div className="flex flex-col items-center gap-6">
-          <Image
-            src={Cube}
-            height={250}
-            className="bg-yellow rounded-lg"
-            alt="Cube casting a shadow"
-          ></Image>
-          <nav className="flex flex-col gap-2 text-center text-lg uppercase w-full">
+        <div className="flex flex-col items-center justify-between gap-6">
+          <nav className="flex flex-col gap-2 text-center text-3xl font-semibold underline">
             {pages.map((page, i) => (
-              <Link
-                href={page.path}
-                onClick={() => toggleSide()}
-                key={i}
-                className={`${
-                  page.accent
-                    ? "bg-yellow py-0.5 text-black px-3 rounded"
-                    : "border border-yellow py-0.5 px-3 rounded"
-                }`}
-              >
-                {page.name}
+              <Link href={page.path} onClick={() => toggleSide()} key={i}>
+                <motion.div
+                  initial={{ x: 20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: i * 0.025 }}
+                >
+                  {page.name}
+                </motion.div>
               </Link>
             ))}
           </nav>
