@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "@/navigation";
 import Image from "next/image";
 import FLLIcon from "@/@/../../public/icons/fll.png";
-import Team from "@/@/../../public/fll/torremolinos-teams.png";
+import Team from "@/@/../../public/fll/fll-torremolinos-2022.jpg";
 import { useTranslations } from "next-intl";
 
 const FLL = () => {
@@ -14,9 +14,9 @@ const FLL = () => {
         <Image
           src={Team}
           width={700}
-          height={700}
+          height={500}
           alt="FLL teams in Torremolinos"
-          className="object-cover sm:max-w-[400px] aspect-square rounded"
+          className="object-cover sm:max-w-[400px] rounded"
         ></Image>
         <div>
           <h2 className="text-3xl font-bold">{t("title")}</h2>
