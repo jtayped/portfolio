@@ -99,7 +99,7 @@
   },
   "About": {
     "hero": {
-      "title": "Acerca de Mí",
+      "title": "Sobre Mí",
       "description": "Soy Joel Taylor, un joven de 17 años de Cataluña, España, estudiando un Bachillerato con pasión por la Informática. Fluido en español, catalán e inglés, me impulsa la curiosidad y estoy inmerso en la programación."
     },
     "skills": {
@@ -175,7 +175,7 @@
       "today": {
         "title": "Hoy",
         "description": {
-          "p1": "Hoy, me presento como un apasionado desarrollador web, listo para convertir tus sueños digitales en realidad. Desde construir mi primera computadora a los 13 años hasta prosperar como freelancer en Fiverr, mi viaje encarna un compromiso para la innovación y el aprendizaje continuo.",
+          "p1": "Desde construir mi primera computadora a los 13 años hasta prosperar como freelancer en Fiverr, mi viaje encarna un compromiso para la innovación y el aprendizaje continuo.",
           "p2": "Colaboremos, innovemos y hagamos realidad tus aspiraciones digitales. Hoy no es solo otro día; es una oportunidad para crear algo extraordinario. Hagámoslo juntos."
         },
         "button": "CONTÁCTAME"
