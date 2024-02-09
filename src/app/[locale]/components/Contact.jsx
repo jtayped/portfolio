@@ -17,13 +17,13 @@ const Contact = () => {
           <h2 className="text-3xl font-bold">{t("title")}</h2>
           <p>{t("description")}</p>
           <div className="flex gap-1 mt-2">
-            <Link
-              href="mailto:jtayped@gmail.com"
+            <a
+              href="mailto:contact@joeltaylor.business"
               className="px-3 py-2 bg-black hover:bg-black/90 transition-colors text-white rounded flex items-center gap-2 text-sm"
             >
               <BsFillSendFill />
               {t("accentBtn")}
-            </Link>
+            </a>
             <Link
               href="https://www.instagram.com/jtayped_"
               className="px-3 py-2 border border-black text-black hover:bg-black/5 transition-colors rounded flex items-center gap-2 text-sm"

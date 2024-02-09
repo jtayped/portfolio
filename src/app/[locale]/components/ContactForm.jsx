@@ -96,7 +96,8 @@ const ContactForm = ({ name, lastName, email, subject, message, sendBtn }) => {
         <div className="flex sm:hidden" />
         <button
           type="submit"
-          className="bg-black hover:bg-black/95 py-2 text-white text-sm rounded font-bold flex justify-center items-center gap-2"
+          className="bg-black disabled:bg-black/50 hover:bg-black/95 py-2 text-white text-sm rounded font-bold flex justify-center items-center gap-2"
+          disabled={state === "success"}
         >
           {state ? (
             state === "loading" ? (
