@@ -38,7 +38,6 @@ const ContactForm = ({ name, lastName, email, subject, message, sendBtn }) => {
     e.preventDefault();
     setState("loading");
 
-    console.log(emailValue);
     await sendEmail(
       nameValue,
       lastNameValue,
