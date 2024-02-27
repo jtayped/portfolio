@@ -3,15 +3,9 @@ import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import axios from "axios";
 import { LuCheck } from "react-icons/lu";
+import emailjs from "@emailjs/browser";
 
-const sendEmail = async (name, lastName, email, subject, body) => {
-  await axios.post(
-    "/api/send",
-    JSON.stringify({ name, lastName, email, subject, body })
-  );
-};
-
-const ContactInput = ({ placeholder, type, autocomplete, setValue }) => {
+const ContactInput = ({ placeholder, type, autocomplete, setValue, name }) => {
   return (
     <div className="border border-black rounded p-2">
       <input
@@ -19,6 +13,7 @@ const ContactInput = ({ placeholder, type, autocomplete, setValue }) => {
         type={type}
         autoComplete={autocomplete}
         onChange={(e) => setValue(e.target.value)}
+        name={name}
         className="w-full bg-transparent outline-none placeholder:text-black placeholder:text-sm"
       />
     </div>
@@ -26,6 +21,8 @@ const ContactInput = ({ placeholder, type, autocomplete, setValue }) => {
 };
 
 const ContactForm = ({ name, lastName, email, subject, message, sendBtn }) => {
+  const form = useRef();
+
   const [nameValue, setName] = useState("");
   const [lastNameValue, setLastName] = useState("");
   const [emailValue, setEmail] = useState("");
@@ -38,13 +35,21 @@ const ContactForm = ({ name, lastName, email, subject, message, sendBtn }) => {
     e.preventDefault();
     setState("loading");
 
-    await sendEmail(
-      nameValue,
-      lastNameValue,
-      emailValue,
-      subjectValue,
-      bodyValue
-    );
+    emailjs
+      .sendForm(
+        "Lft6x263XO9cwUwx9tR_A",
+        "template_jbn4x49",
+        form.current,
+        "eW5t-VKk05ThCONE2"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.error(error.text);
+        }
+      );
 
     setState("success");
   }
@@ -60,12 +65,14 @@ const ContactForm = ({ name, lastName, email, subject, message, sendBtn }) => {
           type="text"
           autocomplete="given-name"
           setValue={setName}
+          name="from_name"
         />
         <ContactInput
           placeholder={lastName}
           type="text"
           autocomplete="family-name"
           setValue={setLastName}
+          name="from_lastName"
         />
       </div>
       <ContactInput
@@ -73,17 +80,19 @@ const ContactForm = ({ name, lastName, email, subject, message, sendBtn }) => {
         type="email"
         autocomplete="email"
         setValue={setEmail}
+        name="from_email"
       />
       <ContactInput
         placeholder={subject}
         type="text"
         autocomplete="off"
         setValue={setSubject}
+        name="subject"
       />
       <div className="border border-black p-2 rounded">
         <textarea
           className="w-full bg-transparent outline-none placeholder:text-black placeholder:text-sm"
-          name={message}
+          name="message"
           placeholder={message}
           cols="30"
           rows="8"
