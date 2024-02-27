@@ -1,18 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FaArrowRight } from "react-icons/fa6";
-import axios from "axios";
 import { LuCheck } from "react-icons/lu";
 import emailjs from "@emailjs/browser";
 
-const ContactInput = ({ placeholder, type, autocomplete, setValue, name }) => {
+const ContactInput = ({ placeholder, type, autocomplete, name }) => {
   return (
     <div className="border border-black rounded p-2">
       <input
         placeholder={placeholder}
         type={type}
         autoComplete={autocomplete}
-        onChange={(e) => setValue(e.target.value)}
         name={name}
         className="w-full bg-transparent outline-none placeholder:text-black placeholder:text-sm"
       />
@@ -23,28 +21,22 @@ const ContactInput = ({ placeholder, type, autocomplete, setValue, name }) => {
 const ContactForm = ({ name, lastName, email, subject, message, sendBtn }) => {
   const form = useRef();
 
-  const [nameValue, setName] = useState("");
-  const [lastNameValue, setLastName] = useState("");
-  const [emailValue, setEmail] = useState("");
-  const [subjectValue, setSubject] = useState("");
-  const [bodyValue, setBody] = useState("");
-
   const [state, setState] = useState("");
 
   async function handleSubmit(e) {
     e.preventDefault();
     setState("loading");
 
-    emailjs
+    await emailjs
       .sendForm(
-        "Lft6x263XO9cwUwx9tR_A",
+        "service_egcfa5j",
         "template_jbn4x49",
         form.current,
         "eW5t-VKk05ThCONE2"
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log("Email sent successfully with status:", result.text);
         },
         (error) => {
           console.error(error.text);
@@ -56,6 +48,7 @@ const ContactForm = ({ name, lastName, email, subject, message, sendBtn }) => {
 
   return (
     <form
+      ref={form}
       className="flex flex-col gap-2 mt-5 max-w-[370px]"
       onSubmit={(e) => handleSubmit(e)}
     >
@@ -64,14 +57,12 @@ const ContactForm = ({ name, lastName, email, subject, message, sendBtn }) => {
           placeholder={name}
           type="text"
           autocomplete="given-name"
-          setValue={setName}
           name="from_name"
         />
         <ContactInput
           placeholder={lastName}
           type="text"
           autocomplete="family-name"
-          setValue={setLastName}
           name="from_lastName"
         />
       </div>
@@ -79,14 +70,12 @@ const ContactForm = ({ name, lastName, email, subject, message, sendBtn }) => {
         placeholder={email}
         type="email"
         autocomplete="email"
-        setValue={setEmail}
         name="from_email"
       />
       <ContactInput
         placeholder={subject}
         type="text"
         autocomplete="off"
-        setValue={setSubject}
         name="subject"
       />
       <div className="border border-black p-2 rounded">
@@ -97,14 +86,13 @@ const ContactForm = ({ name, lastName, email, subject, message, sendBtn }) => {
           cols="30"
           rows="8"
           autoComplete="off"
-          onChange={(e) => setBody(e.target.value)}
         ></textarea>
       </div>
       <div className="grid sm:grid-cols-2 gap-2">
         <div className="flex sm:hidden" />
         <button
           type="submit"
-          className="bg-black disabled:bg-black/50 hover:bg-black/95 py-2 text-white text-sm rounded font-bold flex justify-center items-center gap-2"
+          className="bg-black disabled:bg-black/90 hover:bg-black/95 py-2 text-white text-sm rounded font-bold flex justify-center items-center gap-2"
           disabled={state === "success"}
         >
           {state ? (
@@ -129,7 +117,10 @@ const ContactForm = ({ name, lastName, email, subject, message, sendBtn }) => {
                 <span class="sr-only">Loading...</span>
               </div>
             ) : (
-              <LuCheck className="text-green-500" size={20} />
+              <div className="flex items-center gap-2 font-normal">
+                <LuCheck className="text-green-500" size={20} />
+                Sent
+              </div>
             )
           ) : (
             <>

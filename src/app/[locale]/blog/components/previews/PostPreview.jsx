@@ -15,7 +15,7 @@ const PostPreview = ({ post }) => {
             </p>
           ) : null}
 
-          <Link href={`blog/${convertToUrl(post.title)}`}>
+          <Link href={`/blog/${convertToUrl(post.title)}`}>
             <Image
               src={post.cover}
               width={300}
@@ -50,7 +50,7 @@ const PostPreview = ({ post }) => {
       </div>
 
       <Link
-        href={`blog/${convertToUrl(post.title)}`}
+        href={`/blog/${convertToUrl(post.title)}`}
         aria-label={`Read ${post.title}`}
         className="bg-black w-fit text-white px-2 py-1 text-sm hover:bg-black/90 transition-colors m-4 rounded-sm shadow"
       >
