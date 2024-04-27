@@ -104,7 +104,7 @@
     },
     "skills": {
       "title": "My Skills",
-      "description": "Proficient in HTML/CSS, Python, SEO, and skilled with Tailwind CSS, React JS, JavaScript, and Java. My journey, from building my first computer to mastering diverse languages, reflects a commitment to continuous learning and adaptability.",
+      "description": "Proficient in Next.js, Python, SEO, and skilled with Tailwind CSS, React JS, JavaScript, and Express.js. My journey, from building my first computer to mastering diverse languages, reflects a commitment to continuous learning and adaptability.",
       "button": "GitHub",
       "webdev": "Web Dev",
       "python": "Python",

@@ -104,7 +104,7 @@
     },
     "skills": {
       "title": "Mis Habilidades",
-      "description": "Competente en HTML/CSS, Python, SEO, y hábil con Tailwind CSS, React JS, JavaScript y Java. Mi trayectoria, desde construir mi primera computadora hasta dominar diversos lenguajes, refleja un compromiso con el aprendizaje continuo y la adaptabilidad.",
+      "description": "Competente en Next.js, Python, SEO, y hábil con Tailwind CSS, React JS, JavaScript y Express.js. Mi trayectoria, desde construir mi primera computadora hasta dominar diversos lenguajes, refleja un compromiso con el aprendizaje continuo y la adaptabilidad.",
       "button": "GitHub",
       "webdev": "Desarrollo Web",
       "python": "Python",
