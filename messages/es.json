@@ -105,7 +105,10 @@
     "skills": {
       "title": "Mis Habilidades",
       "description": "Competente en HTML/CSS, Python, SEO, y hábil con Tailwind CSS, React JS, JavaScript y Java. Mi trayectoria, desde construir mi primera computadora hasta dominar diversos lenguajes, refleja un compromiso con el aprendizaje continuo y la adaptabilidad.",
-      "button": "GitHub"
+      "button": "GitHub",
+      "webdev": "Desarrollo Web",
+      "python": "Python",
+      "other": "Otros"
     },
     "fll": {
       "title": "First Lego League",

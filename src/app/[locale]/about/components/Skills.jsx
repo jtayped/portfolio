@@ -1,8 +1,20 @@
 import React from "react";
-import { skills } from "@/constants/skills";
+import { skills1 } from "@/constants/skills";
 import { BsGithub } from "react-icons/bs";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
+import SkillIcon from "./SkillIcon";
+
+const SkillGroup = ({ nameKey, children }) => {
+  const t = useTranslations("About.skills");
+
+  return (
+    <div className="w-full h-full bg-white/80 shadow rounded-lg p-4 sm:p-5">
+      <h3 className="md:text-lg font-bold mb-2">{t(nameKey)}</h3>
+      {children}
+    </div>
+  );
+};
 
 const Skills = () => {
   const t = useTranslations("About.skills");
@@ -21,25 +33,37 @@ const Skills = () => {
             <p className="text-sm">{t("button")}</p>
           </Link>
         </div>
-        <div>
-          <ol className="grid grid-cols-2 gap-2">
-            {skills.map((skill, i) => (
-              <li key={i}>
-                <div className="flex flex-col bg-black text-white p-3 rounded">
-                  <div className="flex justify-between text-sm">
-                    <p>{skill.name}</p>
-                    <p className="font-bold">{skill.percentage}%</p>
-                  </div>
-                  <div class="w-full bg-white/40 rounded-full">
-                    <div
-                      className="bg-white h-1.5 rounded-full"
-                      style={{ width: skill.percentage + "%" }}
-                    ></div>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ol>
+        <div className="grid grid-cols-2 gap-5">
+          <div className="grid grid-rows-2 gap-5">
+            <SkillGroup nameKey={skills1[1].nameKey}>
+              <ul className="flex flex-row flex-wrap md:justify-center gap-4">
+                {skills1[1].icons.map((skill) => (
+                  <li key={skill.name}>
+                    <SkillIcon skill={skill} />
+                  </li>
+                ))}
+              </ul>
+            </SkillGroup>
+            <SkillGroup nameKey={skills1[2].nameKey}>
+              <ul className="flex flex-row flex-wrap md:justify-center gap-4">
+                {skills1[2].icons.map((skill) => (
+                  <li key={skill.name}>
+                    <SkillIcon skill={skill} />
+                  </li>
+                ))}
+              </ul>
+            </SkillGroup>
+          </div>
+          <SkillGroup nameKey={skills1[0].nameKey}>
+            <ul className="grid gap-1.5">
+              {skills1[0].icons.map((skill) => (
+                <li key={skill.name} className="flex items-center gap-4">
+                  {skill.icon}
+                  <p className="text-sm sm:text-md">{skill.name}</p>
+                </li>
+              ))}
+            </ul>
+          </SkillGroup>
         </div>
       </div>
     </div>
