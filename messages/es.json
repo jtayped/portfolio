@@ -58,8 +58,8 @@
     "contact": {
       "title": "Contáctame",
       "description": "No dudes en ponerte en contacto. Ya sea que compartas una pasión por la programación o que tu empresa busque colaboración, estoy emocionado por conectar contigo. Tu participación es crucial para dar forma a nuestra experiencia juntos.",
-      "accentBtn": "Correo electrónico",
-      "secondaryBtn": "Instagram",
+      "accentBtn": "LikedIn",
+      "secondaryBtn": "Correo electrónico",
       "name": "Nombre",
       "lastName": "Apellido",
       "email": "Email",

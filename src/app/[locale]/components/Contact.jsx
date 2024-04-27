@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "@/navigation";
-import { BsFillSendFill } from "react-icons/bs";
+import { BsFillSendFill, BsLinkedin } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { useTranslations } from "next-intl";
 import ContactForm from "./ContactForm";
@@ -18,17 +18,17 @@ const Contact = () => {
           <p>{t("description")}</p>
           <div className="flex gap-1 mt-2">
             <a
-              href="mailto:contact@joeltaylor.business"
+              href="https://www.linkedin.com/in/jtayped/"
               className="px-3 py-2 bg-black hover:bg-black/90 transition-colors text-white rounded flex items-center gap-2 text-sm"
             >
-              <BsFillSendFill />
+              <BsLinkedin />
               {t("accentBtn")}
             </a>
             <Link
-              href="https://www.instagram.com/jtayped_"
+              href="mailto:contact@joeltaylor.business"
               className="px-3 py-2 border border-black text-black hover:bg-black/5 transition-colors rounded flex items-center gap-2 text-sm"
             >
-              <BsInstagram />
+              <BsFillSendFill />
               {t("secondaryBtn")}
             </Link>
           </div>
